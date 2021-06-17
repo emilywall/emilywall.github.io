@@ -1,0 +1,636 @@
+<!DOCTYPE HTML>
+<!--
+	Editorial by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<script async src="https://www.googletagmanager.com/gtag/js?id=G-MHBBVRYWT8"></script>
+		<script>
+		  window.dataLayer = window.dataLayer || [];
+		  function gtag(){dataLayer.push(arguments);}
+		  gtag('js', new Date());
+
+		  gtag('config', 'G-MHBBVRYWT8');
+		</script>
+		<title>Information Visualization - Emory CS</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+	</head>
+	<body class="is-preload">
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Main -->
+					<div id="main">
+						<div class="inner">
+
+							<!-- Header -->
+								<header id="header">
+									<div id="topwrapper">
+										<div><a href="info-vis-f21.html" class="logo"><strong>Information</strong> Visualization</a></div>
+										<div><ul class="topnav">
+											<li><a href="info-vis-f21.html">Home</a></li>
+											<!--<li><a href="index.html">About</a></li>-->
+											<li><a href="#objectives">Objectives</a></li>
+											<li><a href="#assignments">Assignments</a></li>
+											<li><a href="#schedule">Schedule</a></li>
+											<li><a href="#resources">Resources</a></li>
+											<li><a href="#policies">Policies</a></li>
+											<li><a href="#contact">Contact</a></li>
+										</ul></div>
+										<div><ul class="icons">
+											<li><a href="mailto:emily.wall@emory.edu" class="chill"><i class="icon fa fa-envelope"></i></a></li>
+											<li><a href="https://scholar.google.com/citations?user=YfcphqMAAAAJ&hl=en" class="chill"><i class="icon fa fa-graduation-cap"></i></a></li>
+											<li><a href="https://twitter.com/embwall" class="chill"><i class="icon brands fa fa-twitter"></i></a></li>
+											<li><a href="https://www.linkedin.com/in/emilybwall" class="chill"><i class="icon brands fa fa-linkedin"></i></a></li>
+											<li><a href="https://emilywall.github.io" class="chill"><i class="icon fa fa-globe"></i></a></li>
+										</ul></div>
+									</div>
+								</header>
+
+							<!-- Banner -->
+								<section id="banner">
+									<div class="content">
+										<header>
+											<h3 id="about_me">Information Visualization</h3>
+											<p>"Live" lectures T/Th 8:30a - 9:45a EST</p>
+										</header>
+										<p>Data is everywhere, and it increasingly informs important decisions. For instance, analysis of cellphone data tracks the spread of a global pandemic, sensor data is collected and used to track and predict weather patterns, people sift through ratings and reviews to inform consumer purchases, researchers analyze patient data from medical trials to inform the success of new drugs, etc. Statistical summaries of data alone are often insufficient. People's perceptual skills allow us to <i>see</i> differences quickly and efficiently when data is visualized.</p>
+
+										<p>
+											<figure>
+											    <img src='media/images/anscombe.png' alt='anscombes quartet' style="display: block; margin-left: auto; margin-right: auto; width: 50%;"/>
+											    <figcaption><a href="https://en.wikipedia.org/wiki/Anscombe%27s_quartet">Anscombe's Quartet</a> demonstrates four datasets that share the same statistical summaries yet represent very different datasets.</figcaption>
+											</figure>
+										</p>
+											
+										<p>Furthermore, when visualization is combined with machine learning (in the form of visual analytic systems), there are dual benefits of human domain expertise and perceptual capabilities alongside machine accuracy and efficiency. In this course, students (1) will become acquainted with the fundamental theories in cognitive and perceptual psychology that drive visualization design, (2) will be introduced to basic principles of human-computer interaction which inform the design and evaluation of visualizations, and (3) will begin to develop the skills and proficiencies necessary to construct interactive visualizations using Tableau and <span class="unsure">Vega-Lite</span>. </p>
+										
+									</div>
+
+									<span class="image">
+										<div class="w3-content w3-display-container">
+										  <a href="emilywall.github.io" target="_blank"><img class="gallery" src="media/images/me.jpg"></a>
+										</div>
+										<br><br><br>
+										<header>
+											<h4>About the Instructor</h4>
+										</header>
+										<p><a href="emilywall.github.io">Dr. Emily Wall</a> is an Assistant Professor at <a href="https://www.cs.emory.edu/home/">Emory University CS</a>. Prior to joining Emory, she was a Postdoctoral Researcher at <a href="https://www.mccormick.northwestern.edu/computer-science/">Northwestern University</a> after completing her Ph.D. in Computer Science at <a href="https://www.ic.gatech.edu">Georgia Tech</a>.</p>
+									</span>
+								</section>
+
+							<!-- Section -->
+								<section>
+									<header class="major">
+										<h2 id="objectives">Learning Objectives</h2>
+									</header>
+									<div class="features">
+										<article>
+											<span class="icon solid fa-brain"></span>
+											<div class="content">
+												<h3>Theory</h3>
+												<ul>
+													<li>Students should be able to <i>critique</i> a visualization design.</li>
+													<li>Students should be able to articulate and <i>justify</i> their designs using concepts related to <i>visual perception</i> and <i>cognition</i>.</li>
+													<li>Students should be able to <i>describe</i> the benefits and tradeoffs of human and machine counterparts, respectively in visual analytic systems for a given design.</li>
+												</ul>
+											</div>
+										</article>
+										<article>
+											<span class="icon solid fa-signal"></span>
+											<div class="content">
+												<h3>Design</h3>
+												<ul>
+													<li>Students should be able to articulate a suite of <i>visual representations</i> and <i>encodings</i> and for which <i>data types</i> each is suitable.</li>
+													<li>Students should be able to design effective <i>static</i> and <i>interactive</i> visualizations.</li>
+												</ul>
+											</div>
+										</article>
+										<article>
+											<span class="icon solid fa-tools"></span>
+											<div class="content">
+												<h3>Implementation</h3>
+												<ul>
+													<li>Students should develop working proficiency in creating custom visualization or visual analytic interfaces using tools such as <span class="unsure"><i>Vega-Lite</i> or <i>Tableau</i></span>.</li>
+												</ul>
+											</div>
+										</article>
+										<article>
+											<span class="icon solid fa-book"></span>
+											<div class="content">
+												<h3>Research</h3>
+												<ul>
+													<li>Students should be aware of <i>recent trends</i> in visualization research.</li>
+												</ul>
+											</div>
+										</article>
+										<article>
+											<span class="icon solid fa-comments"></span>
+											<div class="content">
+												<h3>Engagement</h3>
+												<ul>
+													<li>Students should engage in discussions in-class and <span class="unsure">online</span>.</li>
+												</ul>
+											</div>
+										</article>
+									</div>
+								</section>
+
+
+							<!-- Section -->
+								<section>
+									<header class="major">
+										<h2 id="assignments">Assignments & Grading</h2>
+									</header>
+
+									<p>Complete assignment descriptions are available <a href="iv-assignments.html">here</a>. Assignments will be individually graded and feedback provided. Some amount of course time will <span class="unsure">An average grade of ≥ 70% translates to <b>S</b> (Satisfactory), while a grade of ≤ 69% translates to <b>U</b> (Unsatisfactory).</span></p>
+									<hr class="minor" />
+
+											<h4><a href="iv-assignments.html#hw">Homeworks</a> (30%)</h4>
+											<div class="table-wrapper">
+												<table>
+													<tbody>
+														<tr>
+															<td><b>1</b></td>
+															<td><span class="icon solid fa-signal"></span></td>
+															<td>Design a static visualization. <a href="iv-assignments.html#hw1">View assignment details here</a>.</td>
+														</tr>
+														<tr>
+															<td><b>2</b></td>
+															<td><span class="icon solid fa-brain"></span></td>
+															<td>Take home quiz. <a href="iv-assignments.html#hw4">View assignment details here</a>.</td>
+														</tr>
+														<tr>
+															<td><b>3</b></td>
+															<td><span class="icon solid fa-brain"></span>,<span class="icon solid fa-signal"></span></td>
+															<td>Critique a visualization. <a href="iv-assignments.html#hw5">View assignment details here</a>.</td>
+														</tr>
+													</tbody>
+												</table>
+											</div>
+
+											<hr class="minor" />
+
+											<h4><a href="iv-assignments.html#group">Group Project</a> (40%)</h4>
+											<p><span class="icon solid fa-tools"></span> Build an interactive Vega-Lite or Tableau visualization from scratch. <a href="iv-assignments.html#group">View assignment details here</a>.</p>
+
+											<hr class="minor" />
+
+											<h4><a href="iv-assignments.html#presentation">In-Class Presentation</a> (20%)</h4>
+											<p><span class="icon solid fa-book"></span> Present a research paper. <a href="iv-assignments.html#presentation">View assignment details here</a>.</p>
+
+											<hr class="minor" />
+
+											<h4><a href="iv-assignments.html#participation">Participation</a> (10%)</h4>
+											<p><span class="icon solid fa-comment"></span> Engage in discussion weekly in-class or <span class="unsure"><a href="">online</a></span>. <a href="iv-assignments.html#participation">View assignment details here</a>.</p>
+								</section>
+
+
+
+							<!-- Section -->
+								<section>
+									<header class="major">
+										<h2 id="schedule">Schedule</h2>
+									</header>
+
+									<div class="table-wrapper">
+										<table class="schedule">
+											<thead>
+												<tr>
+													<th>Week</th>
+													<th>Date</th>
+													<th>Topic</th>
+													<th>Reading</th>
+													<th>Assignments Due</th>
+												</tr>
+											</thead>
+											<tbody>
+												<tr>
+													<td>1</td>
+													<td>8-26</td>
+													<td>Introduction to Information Visualization</td>
+													<td>
+														<a href="http://www.perceptualedge.com/articles/Whitepapers/Communicating_Numbers.pdf"><span class="icon solid fa-book"></span> Stephen Few Article</a><br>
+														<a href="http://www.fallen.io/ww2/"><span class="icon solid fa-film"></span> Fallen</a>
+													</td>
+													<td></td>
+												</tr>
+												<tr>
+													<td>2</td>
+													<td>8-31</td>
+													<td>Data & Chart Types</td>
+													<td>
+														<a href="https://ieeexplore.ieee.org/document/545307"><span class="icon solid fa-book"></span> The Eyes Have It, Ben Shneiderman</a>
+													</td>
+													<td></td>
+												</tr>
+												<tr>
+													<td>2</td>
+													<td>9-02</td>
+													<td>Perception</td>
+													<td>
+														<a href="https://www.csc2.ncsu.edu/faculty/healey/PP/index.html"><span class="icon solid fa-book"></span> Perception in Visualization, Christopher Healey</a>
+													</td>
+													<td></td>
+												</tr>
+												<tr>
+													<td>3</td>
+													<td>9-07</td>
+													<td>Visual Encoding Channels</td>
+													<td>
+														<a href="https://www.wnycstudios.org/podcasts/radiolab/segments/211178-rip-rainbow"><span class="icon solid fa-headphones"></span> Rippin' the Rainbow a New One</a><br>
+														<a href="https://queue.acm.org/detail.cfm?id=1805128"><span class="icon solid fa-book"></span> A Tour Through the Visualization Zoo, Jeffrey Heer</a>
+													</td>
+													<td><a href="iv-assignments.html#hw1">HW1</a></td>
+												</tr>
+												<tr>
+													<td>3</td>
+													<td>9-09</td>
+													<td>Design Principles</td>
+													<td>
+														<a href="http://www.dear-data.com/theproject"><span class="icon solid fa-book"></span> Dear Data</a><br>
+														<a href="https://ieeexplore.ieee.org/abstract/document/6634103"><span class="icon solid fa-book"></span> What Makes a Visualization Memorable?</a>
+													</td>
+													<td><a href="iv-assignments.html#hw1">HW1</a></td>
+												</tr>
+												<tr>
+													<td>4</td>
+													<td>9-09</td>
+													<td>Interaction</td>
+													<td>
+														<a href="https://medium.com/@dominikus/the-end-of-interactive-visualizations-52c585dcafcb"><span class="icon solid fa-book"></span> The death of interactive infographics?</a><br>
+														<a href="https://www.vis4.net/blog/2017/03/in-defense-of-interactive-graphics/"><span class="icon solid fa-book"></span> In Defense of Interactive Graphics</a>
+													</td>
+													<td></td>
+												</tr>
+												<tr>
+													<td>4</td>
+													<td>9-11</td>
+													<td>Communication & Storytelling</td>
+													<td>
+														<a href="https://www.youtube.com/watch?v=jbkSRLYSojo"><span class="icon solid fa-film"></span> GapMinder, Hans Rosling</a>
+													</td>
+													<td></td>
+												</tr>
+												<tr>
+													<td>5</td>
+													<td>9-14</td>
+													<td>Data Humanism & Data Feminism</td>
+													<td>
+														<a href="https://www.youtube.com/watch?v=5uGRGqCFryg&feature=youtu.be"><span class="icon solid fa-film"></span> Why Visual Analytics</a><br>
+														<a href="https://www.youtube.com/watch?v=Z4N9wKxK2i4&feature=youtu.be"><span class="icon solid fa-film"></span> Podium</a>
+													</td>
+													<td></td>
+												</tr>
+												<tr>
+													<td>5</td>
+													<td>9-16</td>
+													<td>Visual Analytics</td>
+													<td>
+														<a href="https://www.youtube.com/watch?v=5uGRGqCFryg&feature=youtu.be"><span class="icon solid fa-film"></span> Why Visual Analytics</a><br>
+														<a href="https://www.youtube.com/watch?v=Z4N9wKxK2i4&feature=youtu.be"><span class="icon solid fa-film"></span> Podium</a>
+													</td>
+													<td></td>
+												</tr>
+												<tr>
+													<td>6</td>
+													<td>9-21</td>
+													<td>Exploratory Data Analysis</td>
+													<td><a href="#resources"><span class="icon solid fa-book"></span> Skim Resources on Tableau and Vega-Lite</a></td>
+													<td><a href="iv-assignments.html#hw2">HW2</a>; get approval by end-of-day for your<br> chosen paper for the <a href="iv-assignments.html#presentation">in-class presentation</a></td>
+												</tr>
+												<tr>
+													<td>6</td>
+													<td>9-23</td>
+													<td>Tools of the Trade: Tableau</td>
+													<td><a href="#resources"><span class="icon solid fa-book"></span> Skim Resources on Tableau and Vega-Lite</a></td>
+													<td><a href="iv-assignments.html#hw2">HW2</a>; get approval by end-of-day for your<br> chosen paper for the <a href="iv-assignments.html#presentation">in-class presentation</a></td>
+												</tr>
+												<tr>
+													<td>7</td>
+													<td>9-28</td>
+													<td>Tools of the Trade: D3</td>
+													<td>
+														<a href="https://www.youtube.com/watch?v=9uaHRWj04D4"><span class="icon solid fa-film"></span> Vega Lite, Dominik Moritz</a><br>
+														<a href="http://www.cs.kent.edu/~zwang/schedule/lj8.pdf"><span class="icon solid fa-book"></span> D3, Michael Bostock</a>
+													</td>
+													<td><a href="iv-assignments.html#presentation">Research Presentation</a></td>
+												</tr>
+												<tr>
+													<td>7</td>
+													<td>9-30</td>
+													<td>Tools of the Trade: D3</td>
+													<td><i>No reading</i></td>
+													<td><a href="iv-assignments.html#presentation">Research Presentation</a></td>
+												</tr>
+												<tr>
+													<td>8</td>
+													<td>10-05</td>
+													<td>Uncertainty & Animation</td>
+													<td>
+														<a href="https://www.youtube.com/watch?v=pTVAn4oLvbc"><span class="icon solid fa-film"></span> The Visual Uncertainty Experience, Jessica Hullman</a><br>
+														<a href="http://idl.cs.washington.edu/files/2016-WhenIsMyBus-CHI.pdf"><span class="icon solid fa-book"></span> When(ish) Is My Bus?</a><br>
+														<a href="http://users.eecs.northwestern.edu/~jhullman/HOPS_PLOS_preprint.pdf"><span class="icon solid fa-book"></span> Hypothetical Outcome Plots</a>
+													</td>
+													<td><a href="iv-assignments.html#hw3">HW3 [No prep, in-class]</a></td>
+												</tr>
+												<tr>
+													<td>8</td>
+													<td>10-07</td>
+													<td>Tasks & Visualization Models</td>
+													<td>
+														<a href="https://www.cs.ubc.ca/labs/imager/tr/2013/MultiLevelTaskTypology/brehmer_infovis13.pdf"><span class="icon solid fa-book"></span> A Multi-Level Typology of Abstract Visualization Tasks</a><br>
+														<a href="https://www.cc.gatech.edu/~john.stasko/papers/infovis05.pdf"><span class="icon solid fa-book"></span> Low-Level Components of Analytic Activity in Information Visualization</a>
+													</td>
+													<td><a href="iv-assignments.html#hw3">HW3 [No prep, in-class]</a></td>
+												</tr>
+												<tr>
+													<td>9</td>
+													<td>10-12</td>
+													<td>Fall Break (No Class)</td>
+													<td></td>
+													<td></td>
+												</tr>
+												<tr>
+													<td>9</td>
+													<td>10-14</td>
+													<td>Bias & Fairness (Vis Lies)</td>
+													<td>
+														<a href="https://www.propublica.org/article/how-we-analyzed-the-compas-recidivism-algorithm"><span class="icon solid fa-book"></span> ProPublica Article</a><br>
+														<a href="https://www.npr.org/transcripts/592986190"><span class="icon solid fa-headphones"></span> Hidden Brain w/ Daniel Kahneman</a>
+													</td>
+													<td></td>
+												</tr>
+												<tr>
+													<td>10</td>
+													<td>10-19</td>
+													<td>Evaluation</td>
+													<td><i>No reading</i></td>
+													<td></td>
+												</tr>
+												<tr>
+													<td>10</td>
+													<td>10-21</td>
+													<td>Tables & Text</td>
+													<td>
+														<a href="https://projects.iq.harvard.edu/files/pfister/files/2013_infovis_lineup.pdf"><span class="icon solid fa-book"></span> Lineup: Visual analysis of multi-attribute rankings</a><br>
+														<a href="https://www.cc.gatech.edu/~stasko/papers/iv08-jigsaw.pdf"><span class="icon solid fa-book"></span> Jigsaw</a><br>
+														<a href="http://www.ifs.tuwien.ac.at/~silvia/wien/vu-infovis/references/havre-ieeeinfovis00.pdf"><span class="icon solid fa-book"></span> ThemeRiver</a>
+													</td>
+													<td></td>
+												</tr>
+												<tr>
+													<td>11</td>
+													<td>10-26</td>
+													<td>Hierarchies & Trees</td>
+													<td>
+														<a href="http://treevis.net"><span class="icon solid fa-book"></span> A Visual Bibliography of Tree Visualization</a>
+													</td>
+													<td><a href="iv-assignments.html#group">Group Project</a></td>
+												</tr>
+												<tr>
+													<td>11</td>
+													<td>10-28</td>
+													<td>Networks</td>
+													<td><i>No reading</i></td>
+													<td><a href="iv-assignments.html#group">Group Project</a></td>
+												</tr>
+												<tr>
+													<td>12</td>
+													<td>11-02</td>
+													<td>Time & Maps</td>
+													<td><i>No reading</i></td>
+													<td><a href="iv-assignments.html#group">Group Project</a></td>
+												</tr>
+												<tr>
+													<td>12</td>
+													<td>11-04</td>
+													<td>Filtering & Aggregation</td>
+													<td>
+														<a href="http://webstaff.itn.liu.se/~jimjo/papers/infovis2009/johansso.pdf"><span class="icon solid fa-book"></span> Interactive Dimensionality Reduction, Sara Johansson</a>
+													</td>
+													<td><a href="iv-assignments.html#group">Group Project</a></td>
+												</tr>
+												<tr>
+													<td>13</td>
+													<td>11-09</td>
+													<td>Scientific Visualization</td>
+													<td><i>No reading</i></td>
+													<td><a href="iv-assignments.html#group">Group Project</a></td>
+												</tr>
+												<tr>
+													<td>13</td>
+													<td>11-11</td>
+													<td>Group Project Work Day</td>
+													<td><i>No reading</i></td>
+													<td><a href="iv-assignments.html#group">Group Project</a></td>
+												</tr>
+												<tr>
+													<td>14</td>
+													<td>11-16</td>
+													<td>Research Presentations</td>
+													<td><i>No reading</i></td>
+													<td><a href="iv-assignments.html#group">Group Project</a></td>
+												</tr>
+												<tr>
+													<td>14</td>
+													<td>11-18</td>
+													<td>Research Presentations</td>
+													<td><i>No reading</i></td>
+													<td><a href="iv-assignments.html#group">Group Project</a></td>
+												</tr>
+												<tr>
+													<td>15</td>
+													<td>11-23</td>
+													<td>Research Presentations</td>
+													<td><i>No reading</i></td>
+													<td><a href="iv-assignments.html#group">Group Project</a></td>
+												</tr>
+												<tr>
+													<td>15</td>
+													<td>11-25</td>
+													<td>Thanksgiving Recess (No Class)</td>
+													<td></td>
+													<td></td>
+												</tr>
+												<tr>
+													<td>16</td>
+													<td>11-30</td>
+													<td>Final Project Presentations</td>
+													<td><i>No reading</i></td>
+													<td><a href="iv-assignments.html#group">Group Project</a></td>
+												</tr>
+												<tr>
+													<td>16</td>
+													<td>12-02</td>
+													<td>Final Project Presentations</td>
+													<td><i>No reading</i></td>
+													<td><a href="iv-assignments.html#group">Group Project</a></td>
+												</tr>
+												<tr>
+													<td>17</td>
+													<td>12-07</td>
+													<td>Recap</td>
+													<td><i>No reading</i></td>
+													<td><a href="iv-assignments.html#group">Group Project</a></td>
+												</tr>
+												<tr>
+													<td>17</td>
+													<td>12-10</td>
+													<td>FINAL EXAM @ 8:00a - 10:30a</td>
+													<td></td>
+													<td></td>
+												</tr>
+											</tbody>
+										</table>
+									</div>
+
+								</section>
+
+
+							<!-- Section -->
+								<section>
+									<header class="major">
+										<h2 id="resources">Resources</h2>
+									</header>
+
+									<div class="row">
+											<div class="col-4 col-12-medium">
+												<h3>Technology Requisites</h3>
+												<p>
+													<b><a href="https://vega.github.io/vega-lite/">Vega-Lite</a></b>
+												</p>
+												<p>
+													<b><a href="https://www.tableau.com">Tableau</a></b> (free version available via Tableau for Higher Education)
+												</p>
+											</div>
+											<div class="col-4 col-12-medium">
+												<h3>Optional Resources</h3>
+												<p>
+													<b>Vega-Lite:</b> <a href="https://vega.github.io/vega-lite/examples/">Examples</a>; <a href="https://vega.github.io/vega-lite/tutorials/getting_started.html">Tutorials</a>; <a href="https://vega.github.io/vega-lite/docs/">Documentation</a>
+							                    </p>
+							                    <p>
+													<b>Tableau</b>: <a href="https://public.tableau.com/en-us/gallery/?tab=viz-of-the-day&type=viz-of-the-day">Gallery</a>; <a href="https://www.tableau.com/learn">Training</a>
+							                    </p>
+							                    <p>
+							                    	<b>Data, Colors, Blogs, Etc.</b>: <a href="http://va.gatech.edu/courses/cs4460/resources/">Compiled by Dr. Alex Endert</a>
+							                    </p>
+												<p>
+													<b>HTML</b>: <a href="http://diveintohtml5.info/index.html">Dive Into HTML5</a>
+							                    </p>
+							                    <p>
+													<b>SVG</b>: <a href="https://www.petercollingridge.co.uk/tutorials/svg/">Tutorials</a>
+							                    </p>
+							                    <p>
+													<b>Javascript</b>: <a href="https://eloquentjavascript.net">Eloquent Javascript</a></b>
+							                    </p>
+											</div>
+											<div class="col-4 col-12-medium">
+												<h3>Required Textbook</h3>
+												<p>
+													<i>None</i>
+							                    </p>
+											</div>
+											
+										</div>
+
+								</section>
+
+
+
+								<!-- Section -->
+								<section>
+									<header class="major">
+										<h2 id="policies">Policies</h2>
+									</header>
+
+									<div class="row">
+										<div class="col-6 col-12-small">
+											<h3>Timeliness</h3>
+											<p>All assignments are due at the start of class on the day listed in the schedule. You will have a total of 2 “free” late days to use for any homework assignments as needed throughout the course (e.g., you can use 1 late day for HW1 and 1 for HW3, …). These "free" days can apply only to <i>homework assignments</i> and cannot be used for research presentations or group projects. These are for any cases where Institute-approved absences do not apply, and no reason must be given to use them. After the 2 “free” late days are used up, any late assignments will receive a 10% per day penalty. Assignments turned in one week or later past the due date will not be graded and given a 0. Note that you <i>have to clearly note on your assignment if you want to apply your late days</i>. This has to be done at the time of submission, not later in the course. Once you use them, you cannot switch them later in the course, so plan wisely.</p>
+										</div>
+										<div class="col-6 col-12-small">
+											<h3>Academic Honesty</h3>
+											<p>Emory aims to cultivate a community based on trust, academic integrity, and honor. Students are expected to act according to the highest ethical standards. For information on Emory’s Honor Code, please visit <a href="http://catalog.college.emory.edu/academic/policies-regulations/honor-code.html">here</a>.</p>
+
+											<p>Any student suspected of cheating or plagiarizing on a quiz, exam, or assignment will be reported to the <a href="http://conduct.emory.edu">Office of Student Conduct</a>, who will investigate the incident and identify the appropriate penalty for violations.</p>
+
+											<p>Unless explicitly stated otherwise, you are expected to complete assignments on your own. It is appropriate to discuss your ideas with others to gain feedback and help with sticky problems.  It is not appropriate to find an existing solution online or from your friends, modify them, and submit as your own work.  If in doubt, confer with your instructor. It is much easier to ask about these things than handle the consequences of a poor decision.</p>
+										</div>
+										<div class="col-6 col-12-small">
+											<h3>Office of Accessibility Services</h3>
+											<p>Your success in this class is important to me. We all need accommodations because we all learn differently. If there are aspects of this course that prevent you from learning or exclude you, let me know as soon as possible. Together we'll develop strategies to meet both your needs and the requirements of the course.</p>
+
+											<p>I encourage you to visit the Office of Accessibility Services to determine how you could improve your learning as well. If you need official accommodations, you have a right to have these met. Students must renew their accommodation letter every semester they attend classes. Contact the Office of Accessibility Services for more information at (404) 727-9877 or email at <a href="mailto:accessibility@emory.edu">accessibility@emory.edu</a>. Additional information is available at the <a href="http://equityandinclusion.emory.edu">OAS website</a>.</p> 
+										</div>
+										<div class="col-6 col-12-small">
+											<h3>Student Support Services</h3>
+											<p>In your time at Emory, you may find yourself in need of support. <a href="http://college.emory.edu/oue/current-students/student-support/index.html">Here</a> you will find some resources to support you both as a student and as a person.</p>
+										</div>
+									</div>
+								</section>
+
+
+								<section>
+									<div class="content">
+										<header class="major">
+											<h2 id="contact">Contact</h2>
+										</header>
+										<header>
+											<h4>Instructor: Dr. Emily Wall</h4>
+											<p>
+												<a href="mailto:emily.wall@emory.edu"><i class="fa fa-envelope" aria-hidden="true"></i> emily.wall@emory.edu</a> <br><br>
+
+												Virtual Office Hours: M/W/F 10am-11am EST via <a href="https://emory.zoom.us/j/7933276908?pwd=NlExWEg5cjN6SkUrd2JuVjdGS1M3QT09"><i class="fa fa-video" aria-hidden="true"></i> Zoom</a><br><br>
+
+								                <a href="https://emilywall.github.io"><i class="fa fa-globe" aria-hidden="true"></i> emilywall.github.io</a><br><br>
+
+											</p>
+										</header>
+										<header>
+											<h4>TA: Jane Doe</h4>
+											<p>
+												<a href="mailto:jane.doe@emory.edu"><i class="fa fa-envelope" aria-hidden="true"></i>jane.doe@emory.edu</a> <br><br>
+
+												Virtual Office Hours: T/Th 7pm-9pm EST via <a href="https://emory.zoom.us/j/7933276908?pwd=NlExWEg5cjN6SkUrd2JuVjdGS1M3QT09"><i class="fa fa-video" aria-hidden="true"></i> Zoom</a><br><br>
+
+								                <a href="https://janedoe.github.io"><i class="fa fa-globe" aria-hidden="true"></i> janedoe.github.io</a><br><br>
+
+											</p>
+										</header>
+									</div>
+								</section>
+
+
+								<section>
+									<div class="content">
+										<footer id="footer">
+											<header class="minor">
+												<h5>Acknowledgements</h5>
+											</header>
+											<p class="copyright">This course was developed by <a href="emilywall.github.io">Emily Wall</a> at Emory University, with an abundance of inspiration and gratitude from Visualization courses taught by <a href="https://www.jagodwin.com">Alex Godwin</a> at American University and <a href="http://va.gatech.edu/endert/">Alex Endert</a> and <a href="https://www.cc.gatech.edu/~john.stasko/">John Stasko</a> at Georgia Tech.</p>
+										</footer>
+									</div>
+								</section>
+
+						</div>
+					</div>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+			<script src="assets/js/gallery.js"></script>
+
+	</body>
+</html>
