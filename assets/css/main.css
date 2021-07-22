@@ -1600,7 +1600,7 @@ ul.pagination {
   overflow-x: auto; }
 
 .schedule tr:nth-child(2n) {
-  background-color: rgba(230, 235, 237, 0.5); 
+  /*background-color: rgba(230, 235, 237, 0.5); */
 }
 
 table {
@@ -1616,13 +1616,15 @@ table {
       background-color: rgba(230, 235, 237, 0.5); }*/
   table td {
     padding: 0.25em 0.25em; 
+    border-bottom: 1px dotted lightgray;
     /*border-bottom: solid 1px rgba(210, 215, 217, 0.75);*/}
   table th {
     color: #3d4449;
     font-size: 0.9em;
     font-weight: 600;
     padding: 0 0.75em 0.75em 0.75em;
-    text-align: left; }
+    text-align: left;
+    border-bottom: solid 2px gray}
   table thead {
     border-bottom: solid 2px rgba(210, 215, 217, 0.75); }
   table tfoot {
