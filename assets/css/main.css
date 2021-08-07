@@ -52,8 +52,16 @@ ol, ul {
   background-color: #f0ad4e;
 }
 
-.label-flex {
+.label-none {
   background-color: gray;
+}
+
+.label-opt {
+  background-color: #5c5cb8;
+}
+
+.label-flex {
+  background-color: #0493f2;
 }
 
 .label {
@@ -1601,6 +1609,10 @@ ul.pagination {
 
 .schedule tr:nth-child(2n) {
   /*background-color: rgba(230, 235, 237, 0.5); */
+}
+
+.legend {
+  border-bottom: none;
 }
 
 table {
