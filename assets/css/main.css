@@ -1961,7 +1961,7 @@ button,
       .posts article .image img {
         display: block;
         height: 100%;
-        width: 100%; }
+        width: 75%; }
   @media screen and (min-width: 1681px) {
     .posts article:nth-child(3n + 1):before {
       display: none; }
