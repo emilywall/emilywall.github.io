@@ -1776,7 +1776,8 @@ button,
     margin: 0 0 1.5em 0; }
     .mini-posts article .image img {
       display: block;
-      width: 100%; }
+      width: auto; 
+      height: 100%;}
   .mini-posts article:first-child {
     border-top: 0;
     margin-top: 0;
@@ -1959,6 +1960,7 @@ button,
       max-height: 175px;}
       .posts article .image img {
         display: block;
+        height: 100%;
         width: 100%; }
   @media screen and (min-width: 1681px) {
     .posts article:nth-child(3n + 1):before {
