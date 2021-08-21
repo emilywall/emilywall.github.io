@@ -168,6 +168,7 @@ body {
   max-width: 100%;
   max-height: 100%;
   width: 80%;
+  border-radius: 50%;
  }
 
  .required {
@@ -2293,6 +2294,15 @@ button,
   }
   #topwrapper>div:last-child {
     width: 24%;
+  }
+  #topwrapper2>div{
+    display: inline-block;
+  }
+  #topwrapper2>div:first-child {
+    width: 24%;
+  }
+  #topwrapper2>div:last-child {
+    width: 75%;
   }
   @media screen and (max-width: 1680px) {
     #header {
