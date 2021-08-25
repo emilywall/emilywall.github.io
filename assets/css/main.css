@@ -177,7 +177,7 @@ body {
   font-style: italic;
  }
 
- .optional {
+ .optional, .updated {
   color: blue;
   font-style: italic;
  }
