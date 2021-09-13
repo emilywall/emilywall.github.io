@@ -2356,7 +2356,7 @@ button,
     margin: 0 0 2em 4em;
     width: 35%; }
     #banner .image img {
-      height: 100%;
+      max-height: 100%;
       -moz-object-fit: contain;
       -webkit-object-fit: contain;
       -ms-object-fit: contain;
