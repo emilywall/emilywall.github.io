@@ -77,6 +77,10 @@ ol, ul {
   border-radius: .25em;
 }
 
+figure figcaption {
+  text-align: center;
+}
+
 blockquote, q {
   quotes: none; }
   blockquote:before, blockquote:after, q:before, q:after {

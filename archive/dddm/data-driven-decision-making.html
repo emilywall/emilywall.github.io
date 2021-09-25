@@ -1,0 +1,433 @@
+<!DOCTYPE HTML>
+<!--
+	Editorial by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<script async src="https://www.googletagmanager.com/gtag/js?id=G-MHBBVRYWT8"></script>
+		<script>
+		  window.dataLayer = window.dataLayer || [];
+		  function gtag(){dataLayer.push(arguments);}
+		  gtag('js', new Date());
+
+		  gtag('config', 'G-MHBBVRYWT8');
+		</script>
+		<title>Data-Driven Decision Making - Emory CS</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+	</head>
+	<body class="is-preload">
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Main -->
+					<div id="main">
+						<div class="inner">
+
+							<!-- Header -->
+								<header id="header">
+									<div id="topwrapper">
+										<div><a href="data-driven-decision-making.html" class="logo"><strong>Data-Driven</strong> <br>Decision Making</a></div>
+										<div><ul class="topnav">
+											<li><a href="data-driven-decision-making.html">Home</a></li>
+											<!--<li><a href="index.html">About</a></li>-->
+											<li><a href="#objectives">Objectives</a></li>
+											<li><a href="#assignments">Assignments</a></li>
+											<li><a href="#schedule">Schedule</a></li>
+											<li><a href="#resources">Resources</a></li>
+											<li><a href="#policies">Policies</a></li>
+											<li><a href="#contact">Contact</a></li>
+										</ul></div>
+										<div><ul class="icons">
+											<li><a href="mailto:emily.wall@emory.edu" class="chill"><i class="icon fa fa-envelope"></i></a></li>
+											<li><a href="https://scholar.google.com/citations?user=YfcphqMAAAAJ&hl=en" class="chill"><i class="icon fa fa-graduation-cap"></i></a></li>
+											<li><a href="https://twitter.com/embwall" class="chill"><i class="icon brands fa fa-twitter"></i></a></li>
+											<li><a href="https://www.linkedin.com/in/emilybwall" class="chill"><i class="icon brands fa fa-linkedin"></i></a></li>
+											<li><a href="https://emilywall.github.io" class="chill"><i class="icon fa fa-globe"></i></a></li>
+										</ul></div>
+									</div>
+								</header>
+
+							<!-- Banner -->
+								<section id="banner">
+									<div class="content">
+										<header>
+											<h3 id="about_me">Data-Driven Decision Making</h3>
+											<p>[ Emory Pre-College Program Course Proposal ]</p>
+											<p>"Live" lectures MTWTF xx:xx - yy:yy EST</p>
+										</header>
+										<p>Data is everywhere, and it increasingly informs important decisions, e.g., analysis of cellphone data tracks the spread of a global pandemic, sensor data is collected and used to track and predict weather patterns, people sift through ratings and reviews to inform consumer purchases, researchers analyze patient data from medical trials to inform the success of new drugs, etc. Statistical summaries of data alone are often insufficient.</p>
+
+										<p>
+											<figure>
+											    <img src='media/images/anscombe.png' alt='anscombes quartet' style="display: block; margin-left: auto; margin-right: auto; width: 50%;"/>
+											    <figcaption><a href="https://en.wikipedia.org/wiki/Anscombe%27s_quartet">Anscombe's Quartet</a> demonstrates four datasets that share the same statistical summaries.</figcaption>
+											</figure>
+										</p>
+											
+										<p>Machine learning provides powerful models, often capable of surpassing accuracy. On the other hand, people have domain expertise and unmatched perceptual skill. The combination of the two often comes in the form of visual analytic systems, which leverage the power of human perception alongside computational capabilities. In this course, students (1) will learn about the strengths and weakness of human and machine counterparts in data-driven decision making, (2) will be introduced to the fundamental theories driving design and evaluation of visual analytic systems, and (3) will begin to develop the skills and proficiencies necessary to construct visualizations using Tableau and Vega-Lite. </p>
+										
+									</div>
+
+									<span class="image">
+										<div class="w3-content w3-display-container">
+										  <a href="emilywall.github.io" target="_blank"><img class="gallery" src="media/images/me.jpg"></a>
+										</div>
+										<br><br><br>
+										<header>
+											<h4>About the Instructor</h4>
+										</header>
+										<p><a href="emilywall.github.io">Dr. Emily Wall</a> is an Assistant Professor in the computer science department at Emory University. Prior to joining Emory, she was a Postdoctoral Researcher at Northwestern University after completing her Ph.D. in Computer Science at Georgia Tech.</p>
+									</span>
+								</section>
+
+							<!-- Section -->
+								<section>
+									<header class="major">
+										<h2 id="objectives">Learning Objectives</h2>
+									</header>
+									<div class="features">
+										<article>
+											<span class="icon solid fa-brain"></span>
+											<div class="content">
+												<h3>Theory</h3>
+												<ul>
+													<li>Students should be able to <i>describe</i> the benefits and tradeoffs of human and machine counterparts, respectively in visual analytic systems for a given design.</li>
+													<li>Students should be able to <i>critique</i> a visualization design.</li>
+													<li>Students should be able to articulate and <i>justify</i> their designs using concepts related to <i>visual perception</i> and <i>cognition</i>.</li>
+												</ul>
+											</div>
+										</article>
+										<article>
+											<span class="icon solid fa-signal"></span>
+											<div class="content">
+												<h3>Design</h3>
+												<ul>
+													<li>Students should be able to articulate a suite of <i>visual representations</i> and <i>encodings</i> and for which <i>data types</i> each is suitable.</li>
+													<li>Students should be able to design effective <i>static</i> and <i>interactive</i> visualizations.</li>
+												</ul>
+											</div>
+										</article>
+										<article>
+											<span class="icon solid fa-tools"></span>
+											<div class="content">
+												<h3>Implementation</h3>
+												<ul>
+													<li>Given ML model output, students should develop working proficiency in creating custom visual analytic interfaces using tools such as <i>Vega-Lite</i> or <i>Tableau</i>.</li>
+												</ul>
+											</div>
+										</article>
+										<article>
+											<span class="icon solid fa-book"></span>
+											<div class="content">
+												<h3>Research</h3>
+												<ul>
+													<li>Students should be aware of <i>recent trends</i> in visual analytics research.</li>
+												</ul>
+											</div>
+										</article>
+									</div>
+								</section>
+
+
+							<!-- Section -->
+								<section>
+									<header class="major">
+										<h2 id="assignments">Assignments & Grading</h2>
+									</header>
+
+									<p>Complete assignment descriptions are available <a href="dddm-assignments.html">here</a>. Assignments will be individually graded and feedback provided. An average grade of ≥ 70% translates to <b>S</b> (Satisfactory), while a grade of ≤ 69% translates to <b>U</b> (Unsatisfactory).</p>
+									<hr class="minor" />
+
+											<h4><a href="dddm-assignments.html#hw">Homeworks</a> (30%)</h4>
+											<div class="table-wrapper">
+												<table>
+													<tbody>
+														<tr>
+															<td><b>1</b></td>
+															<td><span class="icon solid fa-signal"></span></td>
+															<td>Design a static visualization. <a href="dddm-assignments.html#hw1">View assignment details here</a>.</td>
+														</tr>
+														<tr>
+															<td><b>2</b></td>
+															<td><span class="icon solid fa-brain"></span></td>
+															<td>Take home quiz. <a href="dddm-assignments.html#hw4">View assignment details here</a>.</td>
+														</tr>
+														<tr>
+															<td><b>3</b></td>
+															<td><span class="icon solid fa-brain"></span>,<span class="icon solid fa-signal"></span></td>
+															<td>Critique a visualization. <a href="dddm-assignments.html#hw5">View assignment details here</a>.</td>
+														</tr>
+													</tbody>
+												</table>
+
+											<hr class="minor" />
+
+											<h4><a href="dddm-assignments.html#group">Group Project</a> (40%)</h4>
+											<p><span class="icon solid fa-tools"></span> Build an interactive Vega-Lite or Tableau visualization from scratch. <a href="dddm-assignments.html#group">View assignment details here</a>.</p>
+
+											<hr class="minor" />
+
+											<h4><a href="dddm-assignments.html#presentation">In-Class Presentation</a> (30%)</h4>
+											<p><span class="icon solid fa-book"></span> Present a research paper. <a href="dddm-assignments.html#presentation">View assignment details here</a>.</p>
+
+
+								</section>
+
+
+
+							<!-- Section -->
+								<section>
+									<header class="major">
+										<h2 id="schedule">Schedule</h2>
+									</header>
+
+									<div class="table-wrapper">
+										<table>
+											<thead>
+												<tr>
+													<th>Course Day</th>
+													<th>Date</th>
+													<th>Topic</th>
+													<th>Reading</th>
+													<th>Assignments Due</th>
+												</tr>
+											</thead>
+											<tbody>
+												<tr>
+													<td>1</td>
+													<td>x-xx</td>
+													<td>Introduction to Data Visualization</td>
+													<td>
+														<a href="http://www.perceptualedge.com/articles/Whitepapers/Communicating_Numbers.pdf"><span class="icon solid fa-book"></span> Stephen Few Article</a><br>
+														<a href="http://www.fallen.io/ww2/"><span class="icon solid fa-film"></span> Fallen</a>
+													</td>
+													<td></td>
+												</tr>
+												<tr>
+													<td>2</td>
+													<td>x-xx</td>
+													<td>Interactivity in Visualization</td>
+													<td>
+														<a href="https://www.cc.gatech.edu/~stasko/4460/Reading/yi-tvcg07.pdf"><span class="icon solid fa-book"></span> Yi et al, 2007</a><br>
+														<a href="https://www.cc.gatech.edu/gvu/ii/dnm/dustnmagnet.mov"><span class="icon solid fa-film"> Dust & Magnet</a><br>
+														<a href="https://drive.google.com/file/d/1qwfkYaCuUJk_21Hzbb2xKgwst2mGZSjO/view"><span class="icon solid fa-film"></span> Data Breeze</a>
+													</td>
+													<td><a href="dddm-assignments.html#hw1">HW1</a></td>
+												</tr>
+												<tr>
+													<td>3</td>
+													<td>x-xx</td>
+													<td>Introduction to ML</td>
+													<td>
+														<a href="https://poloclub.github.io/cx4242-2020spring-campus/slides/12-CSE6242-400-AnalyticsConcepts.pdf"><span class="icon solid fa-book"></span> Data Analytics Concepts</a>
+													</td>
+													<td></td>
+												</tr>
+												<tr>
+													<td>4</td>
+													<td>x-xx</td>
+													<td>Visual Analytics: Vis + ML</td>
+													<td>
+														<a href="https://www.youtube.com/watch?v=5uGRGqCFryg&feature=youtu.be"><span class="icon solid fa-film"></span> Why Visual Analytics</a><br>
+														<a href="https://www.youtube.com/watch?v=Z4N9wKxK2i4&feature=youtu.be"><span class="icon solid fa-film"></span> Podium</a>
+													</td>
+													<td></td>
+												</tr>
+												<tr>
+													<td>5</td>
+													<td>x-xx</td>
+													<td>Tools of the Trade</td>
+													<td><a href="#resources"><span class="icon solid fa-book"></span> Skim Resources on Tableau and Vega-Lite</a></td>
+													<td><a href="dddm-assignments.html#hw2">HW2</a>; get approval by end-of-day for your<br> chosen paper for the <a href="dddm-assignments.html#presentation">in-class presentation</a></td>
+												</tr>
+												<tr>
+													<td>6</td>
+													<td>x-xx</td>
+													<td>Research Presentations</td>
+													<td><i>No reading</i></td>
+													<td><a href="dddm-assignments.html#presentation">Research Presentation</a></td>
+												</tr>
+												<tr>
+													<td>7</td>
+													<td>x-xx</td>
+													<td>Design Studio</td>
+													<td><a href="http://www.dear-data.com/theproject"><span class="icon solid fa-book"></span> Dear Data</a></td>
+													<td><a href="dddm-assignments.html#hw3">HW3 [No prep, in-class]</a></td>
+												</tr>
+												<tr>
+													<td>8</td>
+													<td>x-xx</td>
+													<td>Bias & Fairness</td>
+													<td>
+														<a href="https://www.propublica.org/article/how-we-analyzed-the-compas-recidivism-algorithm"><span class="icon solid fa-book"></span> ProPublica Article</a><br>
+														<a href="https://www.npr.org/transcripts/592986190"><span class="icon solid fa-headphones"></span> Hidden Brain w/ Daniel Kahneman</a>
+													</td>
+													<td></td>
+												</tr>
+												<tr>
+													<td>9</td>
+													<td>x-xx</td>
+													<td>Flex Day / Group Project Work</td>
+													<td><i>No reading</i></td>
+													<td></td>
+												</tr>
+												<tr>
+													<td>10</td>
+													<td>x-xx</td>
+													<td>Group Presentations</td>
+													<td><i>No reading</i></td>
+													<td><a href="dddm-assignments.html#group">Group Project</a></td>
+												</tr>
+											</tbody>
+										</table>
+									</div>
+
+								</section>
+
+
+							<!-- Section -->
+								<section>
+									<header class="major">
+										<h2 id="resources">Resources</h2>
+									</header>
+
+									<div class="row">
+											<div class="col-4 col-12-medium">
+												<h3>Technology Requisites</h3>
+												<p>
+													<b><a href="https://vega.github.io/vega-lite/">Vega-Lite</a></b>
+												</p>
+												<p>
+													<b><a href="https://www.tableau.com">Tableau</a></b> (free version available via Tableau for Higher Education)
+												</p>
+											</div>
+											<div class="col-4 col-12-medium">
+												<h3>Optional Resources</h3>
+												<p>
+													<b>Vega-Lite:</b> <a href="https://vega.github.io/vega-lite/examples/">Examples</a>; <a href="https://vega.github.io/vega-lite/tutorials/getting_started.html">Tutorials</a>; <a href="https://vega.github.io/vega-lite/docs/">Documentation</a>
+							                    </p>
+							                    <p>
+													<b>Tableau</b>: <a href="https://public.tableau.com/en-us/gallery/?tab=viz-of-the-day&type=viz-of-the-day">Gallery</a>; <a href="https://www.tableau.com/learn">Training</a>
+							                    </p>
+							                    <p>
+							                    	<b>Data, Colors, Blogs, Etc.</b>: <a href="http://va.gatech.edu/courses/cs4460/resources/">Compiled by Dr. Alex Endert</a>
+							                    </p>
+												<p>
+													<b>HTML</b>: <a href="http://diveintohtml5.info/index.html">Dive Into HTML5</a>
+							                    </p>
+							                    <p>
+													<b>SVG</b>: <a href="https://www.petercollingridge.co.uk/tutorials/svg/">Tutorials</a>
+							                    </p>
+							                    <p>
+													<b>Javascript</b>: <a href="https://eloquentjavascript.net">Eloquent Javascript</a></b>
+							                    </p>
+											</div>
+											<div class="col-4 col-12-medium">
+												<h3>Required Textbook</h3>
+												<p>
+													<i>None</i>
+							                    </p>
+											</div>
+											
+										</div>
+
+								</section>
+
+
+
+								<!-- Section -->
+								<section>
+									<header class="major">
+										<h2 id="policies">Policies</h2>
+									</header>
+
+									<div class="row">
+										<div class="col-6 col-12-small">
+											<h3>Timeliness</h3>
+											<p>All assignments are due at the start of class on the day listed in the schedule. You will have a total of 2 “free” late days to use for any homework assignments as needed throughout the course (e.g., you can use 1 late day for HW1 and 1 for HW3, …). These "free" days can apply only to <i>homework assignments</i> and cannot be used for research presentations or group projects. These are for any cases where Institute-approved absences do not apply, and no reason must be given to use them. After the 2 “free” late days are used up, any late assignments will receive a 10% per day penalty. Assignments turned in one week or later past the due date will not be graded and given a 0. Note that you <i>have to clearly note on your assignment if you want to apply your late days</i>. This has to be done at the time of submission, not later in the course. Once you use them, you cannot switch them later in the course, so plan wisely.</p>
+										</div>
+										<div class="col-6 col-12-small">
+											<h3>Academic Honesty</h3>
+											<p>Emory aims to cultivate a community based on trust, academic integrity, and honor. Students are expected to act according to the highest ethical standards. For information on Emory’s Honor Code, please visit <a href="http://catalog.college.emory.edu/academic/policies-regulations/honor-code.html">here</a>.</p>
+
+											<p>Any student suspected of cheating or plagiarizing on a quiz, exam, or assignment will be reported to the <a href="http://conduct.emory.edu">Office of Student Conduct</a>, who will investigate the incident and identify the appropriate penalty for violations.</p>
+
+											<p>Unless explicitly stated otherwise, you are expected to complete assignments on your own. It is appropriate to discuss your ideas with others to gain feedback and help with sticky problems.  It is not appropriate to find an existing solution online or from your friends, modify them, and submit as your own work.  If in doubt, confer with your instructor. It is much easier to ask about these things than handle the consequences of a poor decision.</p>
+										</div>
+										<div class="col-6 col-12-small">
+											<h3>Office of Accessibility Services</h3>
+											<p>Your success in this class is important to me. We all need accommodations because we all learn differently. If there are aspects of this course that prevent you from learning or exclude you, let me know as soon as possible. Together we'll develop strategies to meet both your needs and the requirements of the course.</p>
+
+											<p>I encourage you to visit the Office of Accessibility Services to determine how you could improve your learning as well. If you need official accommodations, you have a right to have these met. Students must renew their accommodation letter every semester they attend classes. Contact the Office of Accessibility Services for more information at (404) 727-9877 or email at <a href="mailto:accessibility@emory.edu">accessibility@emory.edu</a>. Additional information is available at the <a href="http://equityandinclusion.emory.edu">OAS website</a>.</p> 
+										</div>
+										<div class="col-6 col-12-small">
+											<h3>Student Support Services</h3>
+											<p>In your time at Emory, you may find yourself in need of support. <a href="http://college.emory.edu/oue/current-students/student-support/index.html">Here</a> you will find some resources to support you both as a student and as a person.</p>
+										</div>
+									</div>
+								</section>
+
+
+								<section>
+									<div class="content">
+										<header class="major">
+											<h2 id="contact">Contact</h2>
+										</header>
+										<header>
+											<h4>Instructor: Dr. Emily Wall</h4>
+											<p>
+												<a href="mailto:emily.wall@emory.edu"><i class="fa fa-envelope" aria-hidden="true"></i> emily.wall@emory.edu</a> <br><br>
+
+												Virtual Office Hours: M/W/F 10am-11am EST via <a href="https://emory.zoom.us/j/7933276908?pwd=NlExWEg5cjN6SkUrd2JuVjdGS1M3QT09"><i class="fa fa-video" aria-hidden="true"></i> Zoom</a><br><br>
+
+								                <a href="https://emilywall.github.io"><i class="fa fa-globe" aria-hidden="true"></i> emilywall.github.io</a><br><br>
+
+											</p>
+										</header>
+										<header>
+											<h4>TA: Jane Doe</h4>
+											<p>
+												<a href="mailto:jane.doe@emory.edu"><i class="fa fa-envelope" aria-hidden="true"></i>jane.doe@emory.edu</a> <br><br>
+
+												Virtual Office Hours: T/Th 7pm-9pm EST via <a href="https://emory.zoom.us/j/7933276908?pwd=NlExWEg5cjN6SkUrd2JuVjdGS1M3QT09"><i class="fa fa-video" aria-hidden="true"></i> Zoom</a><br><br>
+
+								                <a href="https://janedoe.github.io"><i class="fa fa-globe" aria-hidden="true"></i> janedoe.github.io</a><br><br>
+
+											</p>
+										</header>
+									</div>
+								</section>
+
+
+								<section>
+									<div class="content">
+										<footer id="footer">
+											<header class="minor">
+												<h5>Acknowledgements</h5>
+											</header>
+											<p class="copyright">This course was developed by <a href="emilywall.github.io">Emily Wall</a> at Emory University, with an abundance of inspiration and gratitude from Visualization courses taught by <a href="https://www.jagodwin.com">Alex Godwin</a> at American University and <a href="http://va.gatech.edu/endert/">Alex Endert</a> and <a href="https://www.cc.gatech.edu/~john.stasko/">John Stasko</a> at Georgia Tech.</p>
+										</footer>
+									</div>
+								</section>
+
+						</div>
+					</div>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+			<script src="assets/js/gallery.js"></script>
+
+	</body>
+</html>
