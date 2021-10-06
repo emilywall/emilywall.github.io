@@ -23,12 +23,18 @@ section, summary, time, mark, audio, video {
   font: inherit;
   vertical-align: baseline; }
 
+section {
+  margin-left: 15%;
+  margin-right: 15%;
+}
+
 article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
   display: block; }
 
 body {
-  line-height: 1; }
+  line-height: 1; 
+}
 
 ol, ul {
   list-style: none; }
@@ -44,7 +50,7 @@ ol, ul {
   background-color: #5cb85c;
 }
 
-.label-hw {
+.label-hw, .label-sprint {
   background-color: #d9534f;
 }
 
