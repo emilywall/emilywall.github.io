@@ -49,87 +49,162 @@
 							<!-- Content -->
 								<section>
 
-									<h1>Final Project | Design Manifesto</h1>
+									<h1>Design for Understanding</h1>
 
-									<p>In lieu of a final exam, you will create a final portfolio and post that acts to synthesize and reflects on all of the work you have accomplished throughout the semester. This website will contain two primary elements:</p>
 									<ul>
-									  <li>A portfolio display that visually shows your projects and links to your Medium blog posts.</li>
-									  <li>A <em>Design Manifesto</em> which reflects on the semester as a whole and outputs how it has impacted your design philosophy.</li>
+									  <li><strong>Group size:</strong> Teams of 4 (likely working pairs)</li>
+									  <li><strong>Demo Day:</strong> Tuesday, February 15 <em>in class</em></li>
+									  <li><strong>Design Doc Due:</strong> Thursday, February 17. 11:59 PM.</li>
 									</ul>
-
 
 									<hr class="minor" />
 
-
-
-
-									<h3>Your Design Manifesto</h3>
-				                    
-				                    <p>You should do this individually and it will be the primary artifact for your final project.</p>
-
-									<p>Before you begin writing, think carefully about the following questions:</p>
-									<ul>
-									  <li>How did the design process impact the decisions you made? What were the most valuable pieces? Were there limitations to the design process that you encountered?</li>
-									  <li>How did this differ across different modalities? For example, maybe user testing with your prototypes was more illuminating in one modality than another. Maybe the true capabilities of the technology constrained you more in one modality than another.</li>
-									  <li>When did expectations not meet reality?</li>
-									  <li>Were there some topic areas that were more challenging than others? What did you learn from this process?</li>
-									</ul>
-
-									<p>Design is rarely divorced from our personal lens - our experiences, our expertise, our beliefs. These aspects all mold the applications of technology that you find exciting</p>
-
-									<p>Together, these questions should guide you to <strong>at least 5 main points that define your design process</strong>. To do this, imagine you must translate the processes/skills you gathered in this course to an entirely new scenario (let’s say Brain-Computer Interfaces). What are the important points that you would want to communicate to someone who hasn’t taken HCI before?</p>
-
-									<p>Your takeaways should be evidence-driven. That means that when you discuss these topics, you should frequently reference (and show examples of!) the projects that you completed.</p>
-
-
-
-
-
-									<hr class="minor" />
-
-									<h3>Quality Checks</h3>
+									<h2 id="overview">Overview</h2>
+									<p>Mapping data to visual features is a powerful method for communicating information by leveraging the rapid perceptual pathways in our brain.  In this design sprint, you will use visual methods to communicate data - but for different end goals. Your job is to use two different lenses to approach the same dataset:</p>
 
 									<ul>
-									  <li><strong>Length:</strong> In <em>Medium</em> terms, your post should be roughly 10-13 minutes long in read time.</li>
-									  <li><strong>Clarity:</strong> Your post should be cohesive in quality. There should be an introduction, a body, and a conclusion. Does it read like 5 scattered ideas or do they come together to form a central thesis?</li>
-									  <li><strong>Evidence-Driven:</strong> By this point, you should have a rich store of multimedia from your semester - videos, photos, gifts, etc. Each of your takeaways should be informed by the experiences from your projects. So when you discuss them, you should include visual references and/or videos (from the class) to what you are talking about. Your <em>manifesto</em> should also be supported considerably by real design principles and ideas that have encountered throughout the reading you have done this semester. Link to those pieces when you discuss them!</li>
+									  <li><strong>Clear communication and reasoning:</strong> In this framing, you can assume that you have the user’s attention and that they do not need training in traditional charts. Use your knowledge of perception + data representation to construct a series of graphs that give an in-depth, unbiased, clear portrait of your data.</li>
+									  <li><strong>Persuasive communication and storytelling:</strong> In this framing, your goal is to represent the data (visually, through audio, through interaction) in the most <em>compelling</em> way possible. What will have the most long-lasting impact on users? What will they <em>remember</em>?</li>
 									</ul>
-									
 
+									<p>Since you’ll be working in teams of four (4) for this project, I recommend that you split your team into pairs. However, depending on your design, you may choose to allocate your resources in the way you see best.</p>
 
-									<hr class="major" />
+									<h3 id="choose-a-dataset">Choose a Dataset</h3>
+									<p>Before you begin, choose a dataset. While you may use any dataset, be aware that cleaning the datasets into a usable format can be a major headache. You can use any dataset that you find online. Here are a few good starting points.</p>
 
-									<h2>Website Portfolio</h2>
-									
-									<p>You will create a homepage of some kind that demonstrates each of your projects. The design of the page itself is up to you, but it should be polished and match the tone/mood you would like to set for a public-facing entity.</p>
-
-									<p>At a minimum, the page must:</p>
 									<ul>
-									  <li>Link to at least 4 of the 6 medium posts from your projects this semester.</li>
-									  <li>Include basic information about yourself.</li>
+									  <li><a href="https://think.cs.vt.edu/corgis/"><em>CORGIS (The Collection of Really Great, Interesting, Situated Datasets)</em></a>: cleaned, well-organized datasets that should be very simple to load into your program.</li>
+									  <li><a href="https://github.com/fivethirtyeight/data"><em>Datasets underlying FiveThirtyEight stories</em></a>: Mostly cleaned, but may come in different formats.</li>
+									  <li><a href="https://docs.google.com/spreadsheets/d/1wZhPLMCHKJvwOkP4juclhjFgqIY8fQFMemwKL2c64vk"><em>Data is Plural newsletter</em></a>: fascinating datasets, but may not be cleaned/curated.</li>
 									</ul>
 
-									<p><strong>Note:</strong> Because you are linking to Medium, you may want to consider how the design of your webpage compliments or clashes with the design of Medium as a platform.</p>
+									<h3 id="your-technology">Your Technology</h3>
+									<p>Both are valuable perspectives, and there are tradeoffs between the two. To help match your tools with your objectives, we’ll use two.</p>
 
+									<ul>
+									  <li>
+									    <p><a href="https://vega.github.io/vega/"><strong>Vega</strong></a> or <a href="https://vega.github.io/vega-lite/"><strong>Vega-Lite:</strong></a> These are both templating tools that sit on top of the very popular D3js visualization library. While they are less expressive than 3js, they will allow you to rapidly (hopefully) construct data visualizations. Vega will allow you to be a little more creative and integrate interaction (<em>recommended</em>).</p>
+									  </li>
+									  <li>
+									    <p><a href="https://p5js.org/"><strong>P5js</strong></a>: P5js is an expressive, accessible javascript library that enables pixel-level control. While it is more difficult to construct basic charts than Vega or Vega-Lite, it empowers more creative interpretations of data that are either more abstract or that incorporate sound.</p>
+									  </li>
+									</ul>
 
+									<h3 id="your-two-portraits">Your Two Portraits</h3>
 
-									<hr class="minor" />
+									<ul>
+									  <li>
+									    <p><em>For Clear Communication:</em> You should construct a series of graphs that tell the story of the data. The properties of the data should align with your chart choice. Together, your charts (<em>AT LEAST</em> 3) should explore the data from different perspectives. For example, <a href="http://square.github.io/crossfilter/">Airline on-time performance</a>. While you may not have the degree of interaction of this demo, note how it gives different perspectives of the same data.</p>
+									  </li>
+									  <li>
+									    <p><em>For Persuasion:</em> There are very few guidelines here. I would encourage you to be creative and optimize for impact. For example, here is a visual/audio interpretation of data created by <a href="https://www.eg.bucknell.edu/~emp017/">Evan Peck</a> (note: you need audio): <a href="https://github.com/evanpeck/15-Years-of-Mass-Shootings-in-America">15 Years of Mass Shootings in America</a>.</p>
+									  </li>
+									</ul>
 
-									<h3>On Wordpress</h3>
+									<h3 id="your-design-process">Your Design Process</h3>
+									<p>Before you got to this class, you should have read about the <a href="http://fds.design/">five design-sheet (FdS)</a> approach for information visualization. You should walk through <a href="http://fds.design/wp-content/uploads/2015/06/five-design-sheet-approach-JCR.pdf">all five stages</a> of FdS. Make sure to get feedback from other students in the class as part of your design process!</p>
 
-									<p>You are welcome to create your design page with any technology that you’d like. If you are not familiar with web design, I’d encourage you to look into <a href="https://wordpress.com">Wordpress</a>.</p>
+									<blockquote>
+									  <p>Over the course of the semester, I am going to give fewer and fewer detailed instructions about how to run your design process. This is intentional! As we become more familiar with it, I expect you to be able to apply it yourself to any new technological domain</p>
+									</blockquote>
 
-									<p>There are a number of design questions you need to answer:
-										<ul>
-										  <li>How will you visually organize your work?</li>
-										  <li>How will you represent your work? - Do you want videos embedded on this site? Do you want images that link to Medium posts?</li>
-										  <li>How much writing is on the page? Is it simple and clean, or is it longer and descriptive?</li>
-										</ul>
-									</p>
+									<h3 id="build-it">Build it.</h3>
+									<p>Just build it. Note that you may run into tensions between your imagined visualization and the one that you have time to create. That’s okay! Technical tradeoffs are a reality that any designer must encounter. Adjust your design (as needed), and be sure to discuss these tradeoffs in your design document.</p>
 
-									<p><span class="todo"><strong>To get started</strong>, head over to <a href="https://scholarblogs.emory.edu">scholarblogs.emory.edu</a> and click the <code class="highlighter-rouge">Login</code> button.</span></p>
+									<h2 id="deliverables">Deliverables</h2>
+									<ul>
+									  <li>As always: Your design reflection as a Medium blog post. Like the last assignment, <strong>you do not need a demo video.</strong> Be sure to reflect on the contrast between the two ways you have chosen to communicate your data. There are certainly tradeoffs between the two.</li>
+									  <li>Both of your designs should be hosted on the web at publicly accessible links. These links should be clearly included into your design reflection.</li>
+									  <li>Post the link of each Medium post along with your name on our Slack channel for Assignment 1 <b>and</b> submit the link on Canvas.</li>
+									</ul>
 
-									<p>Particularly for the context of a course like this, I think it is important that you don’t simply take the theme at face value, but modify it to fit your own goals.</p>
+									<hr />
+									<h2 id="some-tech-tips">Some Tech Tips</h2>
+									<p>In the past, a Bucknell student, Gabbi LaBorwitt (‘20), completed each of these assignments to assist Evan Peck's HCI course to help determine where students might encounter problems. From this project on, I will include her notes on the tech you’ll be using, as well as any notes accumulated from myself or from other students since.</p>
+
+									<h3 id="getting-started-creating-a-website">Getting Started: Creating a website</h3>
+									<p><em>If you’ve never hosted a website before, here are some starting points:</em></p>
+
+									I recommend hosting on <a href="https://www.heroku.com">Heroku</a>. Heroku has good tutorials and documentation, but you can use any hosting service you'd like.
+
+									<hr />
+
+									<h2 id="tips-for-getting-data-into-p5js">Tips for Getting Data into p5js</h2>
+
+									<h3 id="getting-started">Getting started</h3>
+									<ol>
+									  <li>Download the <a href="https://p5js.org/download/">complete p5.js library</a> and unzip the file.</li>
+									  <li>Go through <a href="https://p5js.org/get-started/">this</a> ~2 minute tutorial. It’s extremely helpful, and even if you already know what you’re doing, you get to make a pretty fun demo, and you’ll need the documents later on in the assignment.</li>
+									</ol>
+
+									<h3 id="creating-a-data-table">Creating a data table</h3>
+									<ol>
+									  <li>Once you’ve chosen a dataset to work with, download the data as a <code class="highlighter-rouge">.csv</code> file and save it in your working directory.
+									    <ul>
+									      <li>To make life easier, use the empty-example folder from the tutorial as your working directory and work out of the index.html and sketch.js files within it.</li>
+									    </ul>
+									  </li>
+									  <li>Delete the code in your sketch.js. Replace it with the the code found <a href="https://p5js.org/reference/#/p5/loadTable">here</a>.
+									    <ul>
+									      <li>This just makes it so we don’t have to create an entirely new file and reconnect all the documents.</li>
+									    </ul>
+									  </li>
+									  <li>In the third line of actual code (not including comments) replace <code class="highlighter-rouge">"assets/mammals.csv"</code> with the file path to the .csv file you’re using.
+									    - Your third line of code should now look something like this:
+									    <code class="highlighter-rouge">table = loadTable("FILENAME.csv", "csv", "header")</code></li>
+									  <li>Look over the sketch.js example I provided. It’s marked it up with comprehensive explanations and places you need to change the code around. Make sure you read over it before proceeding to the next step.
+									    - You can try running it with your
+									    index.html file if you want to see it in action.</li>
+									  <li>Now that you’ve read how, in your sketch.js code change <code class="highlighter-rouge">"name"</code> in the line <code class="highlighter-rouge">print(table.getColumn("name"));</code> to the column you’re trying to get (if you haven’t already).</li>
+									</ol>
+
+									<h3 id="viewing-your-table">Viewing your table</h3>
+									<ol>
+									  <li>Run your index.html document on a web browser.</li>
+									  <li>Open up developer tools
+									    - <em><a href="https://www.lifewire.com/web-browser-developer-tools-3988965">This article</a> shows how to open the developer toolbox on any browser</em>.</li>
+									  <li>Click on the “javascript console” tab in your developer toolbox (might just be “console” on some browsers).</li>
+									  <li>You should now be able to see the “printed” statements from your sketch.js document.</li>
+									</ol>
+
+									<h3 id="build-your-story">Build your story</h3>
+									<p>The options here are too diverse to describe in a single point. However, if you want to start with existing code, see Evan Peck's <a href="https://github.com/evanpeck/15-Years-of-Mass-Shootings-in-America">15 Years of Mass Shootings in America</a> github repository.</p>
+
+									<hr />
+
+									<h2 id="tips-for-vega-lite-or-vega">Tips for Vega-Lite (or Vega)</h2>
+
+									<h3 id="introducing-vega-lite">Introducing Vega-Lite:</h3>
+									<ol>
+									  <li>Open up Vega-Lite’s <a href="https://vega.github.io/editor/#/custom/vega-lite">online editor</a> to work out of.</li>
+									  <li>Look through the charts and graphs we’re given (found in the Examples menu) to see the different possibilities for visualizing data with Vega-Lite.</li>
+									  <li>Go through their first two <a href="https://vega.github.io/vega-lite/tutorials/getting_started.html">tutorials</a> titled “The Data” and “Encoding Data with Marks”. Code along with the tutorial in order to get a better feel for the library. Some helpful tips:
+									    <ol>
+									      <li>Entire code should be wrapped in <code class="highlighter-rouge"><span class="p">{}</span></code>.</li>
+									      <li>Almost every value you enter must be wrapped in <code class="highlighter-rouge">""</code>– excludes punctuation and numerical values in the <code class="highlighter-rouge">data: values</code> field.</li>
+									      <li>The <code class="highlighter-rouge">encoding</code> field is where you’ll enter the bulk of the information about your dataset. Most importantly the x- and y-axis data go here. <em><a href="https://vega.github.io/vega-lite/docs/encoding.html#data-type">Learn about the different data types here</a></em>.</li>
+									      <li>Create a legend using <a href="https://vega.github.io/vega-lite/docs/legend.html">this documentation</a>.</li>
+									    </ol>
+									  </li>
+									  <li>When you’re done going through the tutorial, use the data found in <a href="https://github.com/plotly/datasets/blob/master/2014_apple_stock.csv">this</a> csv file to create a chart or graph.
+									    <ul>
+									      <li>To use data from an online link, replace <code class="highlighter-rouge">"data": { "values": [..] },</code> with <br /> <code class="highlighter-rouge">"data": { "url": "URL", "format": {"type": "TYPE"} },</code> where <code class="highlighter-rouge">TYPE</code> is the type of file used (csv in our case).</li>
+									      <li>When you’re entering the x- and y-axis “fields”, instead of typing <code class="highlighter-rouge">a</code> and <code class="highlighter-rouge">b</code> you’ll type in the names of the columns you’d like to display the data for. In this example there are only two columns so your x-field would be “AAPL_x” and your y-field would be “AAPL_y”.</li>
+									    </ul>
+									  </li>
+									  <li>Once you finish playing around with your chart or feel like you understand how the code works, move on to the next task.</li>
+									</ol>
+
+									<h3 id="publishing-your-visualization">Publishing your Visualization:</h3>
+									<ol>
+									  <li>Once your diagram is finished, open the <code class="highlighter-rouge">index.html</code> in the <code class="highlighter-rouge">public_html</code> folder that you created earlier in a text editor.</li>
+									  <li>Delete anything that’s already in the file, and use the code given <a href="https://vega.github.io/vega-lite/tutorials/getting_started.html">here</a> (if your computer isn’t already there, go to the section titled “Publish your Visualization Online”) to guide you in adding your chart or graph to your webpage.
+									    <ul>
+									      <li>Don’t forget to include <code class="highlighter-rouge">var vlSpec = {</code> before entering your diagram code as well as the optional code for vega-lite that we need <code class="highlighter-rouge">var opt = {"mode": "vega-lite"};</code> towards the bottom.</li>
+									    </ul>
+									  </li>
+									  <li>Once completed, you should be able to see your diagram</li>
+									</ol>
 
 								</section>
 
