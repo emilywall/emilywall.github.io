@@ -2374,7 +2374,7 @@ button,
       -moz-object-fit: contain;
       -webkit-object-fit: contain;
       -ms-object-fit: contain;
-      object-fit: contain;
+      object-fit: cover;
       -moz-object-position: center;
       -webkit-object-position: center;
       -ms-object-position: center;
