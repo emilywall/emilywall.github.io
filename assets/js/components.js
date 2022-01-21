@@ -144,6 +144,15 @@ class Guest extends HTMLElement {
 	}
 }
 
+class Grad extends HTMLElement {
+	constructor() {
+		super();
+	}
+	connectedCallback() {
+		this.innerHTML = `<span class="label label-guest">Grad Presentation <span class="icon solid fa-user"></span></span>`;
+	}
+}
+
 
 
 
@@ -166,3 +175,4 @@ customElements.define('break-today', Break);
 customElements.define('no-lecture', NoLecture);
 customElements.define('flex-day', FlexDay);
 customElements.define('guest-today', Guest);
+customElements.define('grad-presentation', Grad);
