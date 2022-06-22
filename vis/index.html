@@ -1,0 +1,814 @@
+<!DOCTYPE HTML>
+<!--
+	Editorial by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<script async src="https://www.googletagmanager.com/gtag/js?id=G-MHBBVRYWT8"></script>
+		<script>
+		  window.dataLayer = window.dataLayer || [];
+		  function gtag(){dataLayer.push(arguments);}
+		  gtag('js', new Date());
+
+		  gtag('config', 'G-MHBBVRYWT8');
+		</script>
+		<title>Information Visualization - Emory CS</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="../assets/css/main.css" />
+		<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+	</head>
+	<body class="is-preload">
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Main -->
+					<div id="main">
+						<div class="inner">
+
+							<!-- Header -->
+								<header id="header">
+									<div id="topwrapper2">
+										<div><a href="info-vis-f21.html" class="logo"><strong>Information</strong> Visualization</a></div>
+										<div><ul class="topnav">
+											<li><a href="index.html">Home</a></li>
+											<!--<li><a href="index.html">About</a></li>-->
+											<li><a href="#objectives">Objectives</a></li>
+											<li><a href="#assignments">Assignments</a></li>
+											<li><a href="#schedule">Schedule</a></li>
+											<li><a href="#resources">Resources</a></li>
+											<li><a href="#policies">Policies</a></li>
+											<li><a href="#contact">Contact</a></li>
+										</ul></div>
+									</div>
+								</header>
+
+							<!-- Banner -->
+								<section><!-- id="banner"-->
+									<div class="content">
+										<div class="row">
+											<div class="col-8 col-12-medium"> 
+												<header>
+													<h3>CS 485/584 - Information Visualization</h3>
+													<p>Synchronous Lectures T/Th 11:30a - 12:45p EST</p>
+												</header>
+												<p>Data is everywhere, and it increasingly informs important decisions. For instance, analysis of cellphone data tracks the spread of a global pandemic, sensor data is collected and used to track and predict weather patterns, people sift through ratings and reviews to inform consumer purchases, researchers analyze patient data from medical trials to inform the success of new drugs, etc. Statistical summaries of data alone are often insufficient. People's perceptual skills allow us to <i>see</i> differences quickly and efficiently when data is visualized.</p>
+													
+												<p>Furthermore, when visualization is combined with machine learning (in the form of visual analytic systems), there are dual benefits of human domain expertise and perceptual capabilities alongside machine accuracy and efficiency. In this course, students (1) will become acquainted with the fundamental theories in cognitive and perceptual psychology that drive visualization design, (2) will be introduced to the state-of-the-art in visualization research, and (3) will begin to develop the skills and proficiencies necessary to construct interactive visualizations using D3 and Tableau. </p>
+
+
+
+												<header>
+													<h4>Course Logistics</h4>
+												</header>
+												<p>
+													<b>When</b>: T/Th 11:30a - 12:45p EST, <i>synchronous</i><br>
+													<b>Where</b>: <a href="https://emap.fmd.emory.edu/website/campus/index.htm#?queryzoom=Yes&Query=(bldg='1131')">Math & Science Center N304</a><br>
+													<b>Lecture Slides & Recordings</b>: <a href="https://canvas.emory.edu/courses/91310">Canvas</a><br>
+													<b>Assignments</b>: <a href="https://github.com/emory-infovis-f21">GitHub Classroom</a><br>
+													<b>Discussion / Questions</b>: <a href="https://piazza.com/emory/fall2021/cs485cs584/home">Slack</a><br>
+													<b>Office Hours</b>: <a href="#contact">here</a>
+												</p>
+
+												<p>
+													Your attendance is <b>crucial</b>, because you will be working on your group projects in class. Your teammates will depend on your presence and engagement. Regular in-class quizzes will also count as part of your grade and <i>cannot be made up outside of class unless your absence was university-approved</i>.
+												</p>
+
+												<!--<p>
+													<span class="updated">If you'd like to get started while waiting for the GitHub Classroom roster bug to resolve, check out the links to the public repositories for <a href="https://github.com/emory-infovis-f21/web-dev">(optional) Homework 0</a> and <a href="https://github.com/emory-infovis-f21/static-vis-design">HW 1</a> meanwhile.</span>
+												</p>-->
+
+												<!--<h6>Lecture Recordings Disclaimer</h6>
+												<p>
+													Our lectures on Zoom will all be recorded and made available for students who are unable to attend them live. Lecture videos posted on Canvas are for the sole purpose of educating the students enrolled in the course. The release of such information (including, but not limited to, directly sharing, screen capturing, or recording content) is <i>strictly prohibited</i>, unless the instructor states otherwise. Doing so without the permission of the instructor will be considered an Honor Code violation and may also be a violation of other state and federal laws, such as the Copyright Act.
+												</p>
+												<p>
+													Students who participate with their camera engaged or utilize a profile image are agreeing to have their video or image recorded. If you are unwilling to consent to have your profile or video image recorded, be sure to keep your camera off and do not use a profile image. Likewise, students who un-mute during class and participate orally are agreeing to have their voices recorded. If you are not willing to consent to have your voice recorded during class, you will need to keep your mute button activated and communicate exclusively using the “chat” feature, which allows students to type questions and comments live.
+												</p>-->
+
+
+
+												<header>
+													<h4>People</h4>
+												</header>
+												<p>
+													<b>Instructor</b>: <a href="https://emilywall.github.io">Dr. Emily Wall</a> is an Assistant Professor at <a href="https://www.cs.emory.edu/home/">Emory University CS</a>. Prior to joining Emory, she was a Postdoctoral Researcher at <a href="https://www.mccormick.northwestern.edu/computer-science/">Northwestern University</a> after completing her Ph.D. in Computer Science at <a href="https://www.ic.gatech.edu">Georgia Tech</a>.
+												</p>
+
+												<p>
+													<b>Teaching Assistant</b>: <a href="https://shiyaol.github.io/">Shiyao Li</a> is a second year CSI Ph.D. student. He joined Emory after completing his Masters in Data Science at <a href="https://www.vanderbilt.edu/datascience/">Vanderbilt University</a>.
+												</p>
+												
+											</div>
+											<div class="col-4 col-12-medium">
+												<figure>
+													<img class="article" src='images/anscombe.png' alt='anscombes quartet' style="display: block; margin-left: auto; margin-right: auto; width: 95%;"/>
+													<figcaption><a href="https://en.wikipedia.org/wiki/Anscombe%27s_quartet">Anscombe's Quartet</a> demonstrates four datasets that share the same statistical summaries yet represent very different datasets.</figcaption>
+												</figure><br><br>
+												<figure>
+													<img class="article" src='images/minard.gif' alt='minards map' style="display: block; margin-left: auto; margin-right: auto; width: 95%;"/>
+													<figcaption>Charles Minard's map of Napoleon's march from Paris to Moscow during the <a href="https://en.wikipedia.org/wiki/French_invasion_of_Russia">French invasion of Russia</a>.</figcaption>
+												</figure><br><br>
+												<figure>
+													<img class="article" src='images/crimean_war.jpg' alt='crimean war deaths' style="display: block; margin-left: auto; margin-right: auto; width: 95%;"/>
+													<figcaption><a href="https://en.wikipedia.org/wiki/Florence_Nightingale">Florence Nightingale's</a> visualization of causes of death in the Crimean War.</figcaption>
+												</figure>
+											</div>
+										</div>
+									</div>
+								</section>
+
+							<!-- Section -->
+								<section>
+									<header class="major">
+										<h2 id="objectives">Learning Objectives</h2>
+									</header>
+									<div class="features">
+										<article>
+											<span class="icon solid fa-brain"></span>
+											<div class="content">
+												<h3>Theory</h3>
+												<ul>
+													<li>Students should be able to <i>critique</i> a visualization design.</li>
+													<li>Students should be able to articulate and <i>justify</i> their designs using concepts related to <i>visual perception</i> and <i>cognition</i>.</li>
+													<li>Students should be able to <i>describe</i> the benefits and tradeoffs of human and machine counterparts, respectively in visual analytic systems for a given design.</li>
+												</ul>
+											</div>
+										</article>
+										<article>
+											<span class="icon solid fa-signal"></span>
+											<div class="content">
+												<h3>Design</h3>
+												<ul>
+													<li>Students should be able to articulate a suite of <i>visual representations</i> and <i>encodings</i> and for which <i>data types</i> each is suitable.</li>
+													<li>Students should be able to design effective <i>static</i> and <i>interactive</i> visualizations.</li>
+												</ul>
+											</div>
+										</article>
+										<article>
+											<span class="icon solid fa-tools"></span>
+											<div class="content">
+												<h3>Implementation</h3>
+												<ul>
+													<li>Students should develop working proficiency in creating custom visualization or visual analytic interfaces using tools such as <i>D3</i> and <i>Tableau</i></span>.</li>
+												</ul>
+											</div>
+										</article>
+										<article>
+											<span class="icon solid fa-book"></span>
+											<div class="content">
+												<h3>Research</h3>
+												<ul>
+													<li>Students should be able to <i>describe</i> a topic in visualization research.</li>
+													<li>(Graduate) students should be able to <i>critically discuss</i> the strengths and weaknesses of a visualization research paper.</li>
+												</ul>
+											</div>
+										</article>
+										<article>
+											<span class="icon solid fa-comments"></span>
+											<div class="content">
+												<h3>Engagement</h3>
+												<ul>
+													<li>Students should engage in discussions and activities in-class and online.</li>
+												</ul>
+											</div>
+										</article>
+									</div>
+								</section>
+
+
+							<!-- Section -->
+								<section>
+									<header class="major">
+										<h2 id="assignments">Assignments & Grading</h2>
+									</header>
+
+									<p>Complete assignment descriptions are available on <a href="https://classroom.github.com/classrooms/87680931-emory-cs-infovis-classroom-f21">GitHub Classroom</a>. <b>All assignments are due at 11:59pm EST on the due date.</b></p>
+									<hr class="minor" />
+
+									<div class="table-wrapper">
+												<table class="schedule" style="width: 60%;">
+													<tbody>
+														<thead>
+															<th><b>Objective</b></th>
+															<th><b>Weight (Grad)</b></th>
+															<th><b>Weight (Undergrad)</b></th>
+															<th><b>Description</b></th>
+														</thead>
+														<tr>
+															<td><span class="icon solid fa-brain"></span></td>
+															<td>15%</td>
+															<td>15%</td>
+															<td><a href="assignments/reading_quizzes.html">Reading Quizzes.</a></td>
+														</tr>
+														<tr>
+															<td><span class="icon solid fa-comments"></span><span class="icon solid fa-brain"></span></td>
+															<td>12%</td>
+															<td>15%</td>
+															<td><a href="assignments/participation.html">Participation.</a></td>
+														</tr>
+														<tr>
+															<td><span class="icon solid fa-signal"></span><span class="icon solid fa-tools"></span><span class="icon solid fa-brain"></span></td>
+															<td>30%</td>
+															<td>30%</td>
+															<td><a href="assignments/homeworks.html">Homework Assignments.</a></td>
+														</tr>
+														<tr>
+															<td><span class="icon solid fa-signal"></span><span class="icon solid fa-brain"></span></td>
+															<td>12%</td>
+															<td>-</td>
+															<td><a href="assignments/debate.html">Debate.</a></td>
+														</tr>
+														<tr>
+															<td><span class="icon solid fa-signal"></span><span class="icon solid fa-tools"></span><span class="icon solid fa-brain"></span></td>
+															<td>40%</td>
+															<td>40%</td>
+															<td><a href="assignments/group_project.html">Group Project.</a></td>
+														</tr>
+													</tbody>
+												</table>
+											</div>
+
+								</section>
+
+
+
+							<!-- Section -->
+								<section>
+									<header class="major">
+										<h2 id="schedule">Schedule</h2>
+									</header>
+
+									<p>
+										<table>
+											<tbody>
+												<tr>
+													<td class="legend">
+														<i><span class="label label-opt">O</span></i> = Optional Reading
+													</td>
+													<td class="legend">
+														<i><span class="label label-none">Ø No prep</span></i> = No Preparation
+													</td>
+													<td class="legend">
+														<i><span class="label label-break">Break</span></i> = No Lecture
+													</td>
+													<td class="legend">
+														<i><span class="label label-hw">HW</span></i> = Homework
+													</td>
+													<td class="legend">
+														<i><span class="label label-group">M</span></i> = Group Project Milestone
+													</td>
+													<td class="legend">
+														<i><span class="label label-flex">Flex</span></i> = Flex Day
+													</td>
+												</tr>
+											</tbody>
+										</table>
+									</p>
+
+									<div class="table-wrapper">
+										<table class="schedule">
+											<thead>
+												<tr>
+													<th>Week</th>
+													<th>Date</th>
+													<th>Topic</th>
+													<th>Reading</th>
+													<th>Assignments Due</th>
+												</tr>
+											</thead>
+											<tbody>
+												<tr>
+													<td>1</td>
+													<td>8-26</td>
+													<td>Introduction to Information Visualization</td>
+													<td>
+														<a href="http://vis.cs.brown.edu/docs/pdf/bib/value-of-infovis.pdf"><span class="icon solid fa-book"></span> The Value of Information Visualization, Fekete et al</a><br>
+														<i><span class="label label-opt">O</span></i> <a href="../media/course_materials/readings-card-mackinlay-shneiderman.pdf"><span class="icon solid fa-book"></span> Using Vision to Think, Card et al.</a>
+													</td>
+													<td>
+														Complete <a href="https://forms.gle/dL7VLYxgpdfNfg3C7">Background Survey</a><br>
+														<i><span class="label label-opt">O</span></i> <span class="label label-hw"> HW0:</span> <a href="https://classroom.github.com/a/gFglalLa">Web Development</a> <i>(optional)</i>
+													</td>
+												</tr>
+												<tr>
+													<td rowspan="2">2</td>
+													<td>8-31</td>
+													<td>Data</td>
+													<td>
+														<a href="https://ieeexplore.ieee.org/document/545307"><span class="icon solid fa-book"></span> The Eyes Have It, Shneiderman</a>
+													</td>
+													<td></td>
+												</tr>
+												<tr>
+													
+													<td>9-02</td>
+													<td>Charts & Visual Encodings<br>
+														<i>Guest Lecture: <a href="https://cyxiong.com">Dr. Cindy Xiong</a>, U. Mass - Amherst</i>
+													</td>
+													<td>
+														<a href="https://queue.acm.org/detail.cfm?id=1805128"><span class="icon solid fa-book"></span> A Tour Through the Visualization Zoo, Heer et al.</a><br>
+														<i><span class="label label-opt">O</span></i> <a href="http://www.perceptualedge.com/articles/Whitepapers/Communicating_Numbers.pdf"><span class="icon solid fa-book"></span> Stephen Few Article</a><br>
+														<i><span class="label label-opt">O</span></i> <a href="https://www.wnycstudios.org/podcasts/radiolab/segments/211178-rip-rainbow"><span class="icon solid fa-headphones"></span> Rippin' the Rainbow a New One</a>
+													</td>
+													<td>Check out your assigned date for the <a href="https://docs.google.com/spreadsheets/d/1CMZx48Lzsd1gUuYfAQtBgWIsviPdo2_vC5ZWZHTVd1Q/edit?usp=sharing">Research Presentation</a></td>
+												</tr>
+												<tr>
+													<td rowspan="2">3</td>
+													<td>9-07</td>
+													<td>Perception</td>
+													<td>
+														<a href="https://www.csc2.ncsu.edu/faculty/healey/PP/index.html"><span class="icon solid fa-book"></span> Perception in Visualization, Healey</a>
+													</td>
+													<td>
+														<span class="label label-hw">HW1</span> <a href="#homework">Design Static Visualizations</a>
+													</td>
+												</tr>
+												<tr>
+													
+													<td>9-09</td>
+													<td>Tools of the Trade: D3<br>
+														<i>Work on <span class="label label-hw">HW2</span> in class</i></td>
+													<td>
+														<a href="http://www.cs.kent.edu/~zwang/schedule/lj8.pdf"><span class="icon solid fa-book"></span> D3, Bostock et al.</a><br>
+														<i><span class="label label-opt">O</span></i> <a href="https://www.youtube.com/watch?v=TOJ9yjvlapY"><span class="icon solid fa-film"></span> D3 Bar Chart Tutorial Video</a><br>
+														<i><span class="label label-opt">O</span></i> <a href="https://classroom.github.com/a/gFglalLa">Web Programming Tutorial</a> <i>(if you are not already familiar)</i>
+													</td>
+													<td></td>
+												</tr>
+												<tr>
+													<td rowspan="2">4</td>
+													<td>9-14</td>
+													<td>Communication & Storytelling</td>
+													<td>
+														<a href="https://www.ted.com/talks/david_mccandless_the_beauty_of_data_visualization"><span class="icon solid fa-film"></span> TED Talk, David McCandless</a>
+														<!--<a href="https://www.youtube.com/watch?v=jbkSRLYSojo"><span class="icon solid fa-film"></span> GapMinder, Hans Rosling</a><br>
+														<a href="http://www.fallen.io/ww2/"><span class="icon solid fa-film"></span> Fallen</a><br>
+														<a href="https://ieeexplore-ieee-org.proxy.library.emory.edu/stamp/stamp.jsp?tp=&arnumber=9465643"><span class="icon solid fa-book"></span> Designing with Pictographs, Burns et al.</a>-->
+													</td>
+													<td><span class="label label-hw">HW2</span> <a href="#homework">Implement a Bar Chart</a></td>
+												</tr>
+												<tr>
+
+													<td>9-16</td>
+													<td><span class="label label-group">Group</span> Project Pitch & Group Formation</td>
+													<td><i><span class="label label-none">Ø No prep</span></i></td>
+													<td>
+														<span class="label label-group">M1</span> <a href="#group_project">Project Pitch</a>
+													</td>
+												</tr>
+												<tr>
+													<td rowspan="2">5</td>
+													<td>9-21</td>
+													<td>Interaction</td>
+													<td>
+														<a href="https://www.vis4.net/blog/2017/03/in-defense-of-interactive-graphics/"><span class="icon solid fa-book"></span> In Defense of Interactive Graphics, Aisch</a><br>
+														<i><span class="label label-opt">O</span></i> <a href="https://medium.com/@dominikus/the-end-of-interactive-visualizations-52c585dcafcb"><span class="icon solid fa-book"></span> The death of interactive infographics, Baur</a>
+													</td>
+													<td></td>
+												</tr>
+												<tr>
+
+													<td>9-23</td>
+													<td>Visual Analytics</td>
+													<td>
+														<a href="https://www.youtube.com/watch?v=5uGRGqCFryg&feature=youtu.be"><span class="icon solid fa-film"></span> Why Visual Analytics</a>
+													</td>
+													<td></td>
+												</tr>
+												<tr>
+													<td rowspan="2">6</td>
+													<td>9-28</td>
+													<td>Data & Visualization Ethics<br>
+														<i>Part I</i>
+													</td>
+													<td>
+														<a href="http://www.dear-data.com/theproject"><span class="icon solid fa-book"></span> Dear Data</a><br>
+														<a href="https://www.youtube.com/watch?v=IFA-3uXEcb0"><span class="icon solid fa-film"></span> Lies, Distortions, and Misrepresentations in Data, Michael Correll</a><br>
+														<i><span class="label label-opt">O</span></i> <a href="https://www.youtube.com/watch?v=6GEfkfpU7wQ"><span class="icon solid fa-film"></span> Data Feminism, Lauren Klein</a>
+													</td>
+													<td><span class="label label-hw">HW3</span> <a href="#homework">Implement an Interactive Network</a></td>
+												</tr>
+												<tr>
+		
+													<td>9-30</td>
+													<td>Data & Visualization Ethics<br>
+														<i>Part II</i>
+													</td>
+													<td>
+														<a href="https://www.propublica.org/article/how-we-analyzed-the-compas-recidivism-algorithm"><span class="icon solid fa-book"></span> ProPublica Article, Larson et al.</a><br>
+														<i><span class="label label-opt">O</span></i> <a href="https://www.npr.org/transcripts/592986190"><span class="icon solid fa-headphones"></span> Hidden Brain w/ Daniel Kahneman</a>
+													</td>
+													<td><span class="label label-group">M2</span> <a href="#group_project">Short Project Statement</a></td>
+												</tr>
+												<tr>
+													<td rowspan="2">7</td>
+													<td>10-05</td>
+													<td>Design Principles</td>
+													<td>
+														<i><span class="label label-opt">O</span></i> <a href="https://ieeexplore.ieee.org/abstract/document/6634103"><span class="icon solid fa-book"></span> What Makes a Visualization Memorable, Borkin et al.</a>
+													</td>
+													<td><span class="label label-hw">HW4</span> <a href="#homework">Design Ethical Visualizations</a></td>
+												</tr>
+												<tr>
+											
+													<td>10-07</td>
+													<td>Exploratory Data Analysis</td>
+													<td>
+														<a href="#resources"><span class="icon solid fa-book"></span> Skim Resources on Tableau</a>
+													</td>
+													<td></td>
+												</tr>
+												<tr>
+													<td rowspan="2">8</td>
+													<td>10-12</td>
+													<td><span class="label label-break">Break</span> Fall Break</td>
+													<td><i><span class="label label-none">Ø No prep</span></i></td>
+													<td></td>
+												</tr>
+												<tr>
+											
+													<td>10-14</td>
+													<td>Uncertainty & Animation <br>
+														<i>Guest Lecture: <a href="https://pages.cs.wisc.edu/~yeaseulkim/">Dr. Yea-Seul Kim</a>, U. Wisconsin</i>
+													</td>
+													<td>
+														<a href="https://www.youtube.com/watch?v=pTVAn4oLvbc"><span class="icon solid fa-film"></span> The Visual Uncertainty Experience, Jessica Hullman</a><br>
+														<i><span class="label label-opt">O</span></i> <a href="http://idl.cs.washington.edu/files/2016-WhenIsMyBus-CHI.pdf"><span class="icon solid fa-book"></span> When(ish) Is My Bus, Kay et al.</a><br>
+														<i><span class="label label-opt">O</span></i> <a href="http://users.eecs.northwestern.edu/~jhullman/HOPS_PLOS_preprint.pdf"><span class="icon solid fa-book"></span> Hypothetical Outcome Plots, Hullman et al.</a>
+													</td>
+													<td><span class="label label-hw">HW5</span> <a href="#homework">Conduct Exploratory Data Analysis with Tableau</a></td>
+												</tr>
+												<tr>
+													<td rowspan="2">9</td>
+													<td>10-19</td>
+													<td>
+														Evaluation<br>
+														<i>Part I</i>
+													</td>
+													<td>
+														<i><a href="http://www.cs.umd.edu/users/ben/papers/Shneiderman2006Strategies.pdf"><span class="icon solid fa-book"></span> Multi-Dimensional In-Depth Long-term Case Studies, Shneiderman and Plaisant</a>
+													</td>
+													<td></td>
+												</tr>
+												<tr>
+											
+													<td>10-21</td>
+													<td>
+														Evaluation<br>
+														<i>Part II</i>
+													</td>
+													<td>
+														<a href="https://emilywall.github.io/media/papers/ValueVIS18.pdf"><span class="icon solid fa-book"></span> A Heuristic Approach to Value-Driven Evaluation of Visualizations, Wall et al.</a>
+													</td>
+													<td><span class="label label-hw">HW6</span> <a href="#homework">Critique a Visualization</a></td>
+												</tr>
+												<tr>
+													<td rowspan="2">10</td>
+													<td>10-26</td>
+													<td><i><span class="label label-break">No Lecture</span></i> (VIS Week)</td>
+													<td><i><span class="label label-none">Ø No prep</span></i></td>
+													<td></td>
+												</tr>
+												<tr>
+										
+													<td>10-28</td>
+													<td><i><span class="label label-break">No Lecture</span></i> (VIS Week)</td>
+													<td><i><span class="label label-none">Ø No prep</span></i></td>
+													<td></td>
+												</tr>
+												<tr>
+													<td rowspan="2">11</td>
+													<td>11-02</td>
+													<td><a href="https://classroom.github.com/a/kUz6NkuM">Design Lab<br>
+														<i>Maps & Networks</i></a>
+													</td>
+													<td><i><span class="label label-none">Ø No prep</span></i></td>
+													<td><span class="label label-hw">HW7</span> <a href="#homework">IEEE VIS Travel Report</a></td>
+												</tr>
+												<tr>
+											
+													<td>11-04</td>
+													<td>Networks & Trees</td>
+													<td>
+														<a href="http://treevis.net"><span class="icon solid fa-book"></span> A Visual Bibliography of Tree Visualization, Schulz</a><br> 
+														<a href="https://vimeo.com/237670662"><span class="icon solid fa-film"></span> Graphiti, Srinivasan et al.</a>
+													</td>
+													<td></td>
+												</tr>
+												<tr>
+													<td rowspan="2">12</td>
+													<td>11-09</td>
+													<td><span class="label label-group">Group</span> Project Poster Session</td>
+													<td><i><span class="label label-none">Ø No prep</span></i></td>
+													<td><span class="label label-group">M3</span> <a href="#group_project">Project Design Document</a></td>
+												</tr>
+												<tr>
+											
+													<td>11-11</td>
+													<td>Tables & Text</td>
+													<td>
+														<a href="https://projects.iq.harvard.edu/files/pfister/files/2013_infovis_lineup.pdf"><span class="icon solid fa-book"></span> Lineup: Visual analysis of multi-attribute rankings, Gratzl et al.</a><br>
+														<i><span class="label label-opt">O</span></i> <a href="https://www.cc.gatech.edu/~stasko/papers/iv08-jigsaw.pdf"><span class="icon solid fa-book"></span> Jigsaw, Stasko et al.</a>
+													</td>
+													<td></td>
+												</tr>
+												<tr>
+													<td rowspan="2">13</td>
+													<td>11-16</td>
+													<td>Tasks & Visualization Models</td>
+													<td>
+														<a href="https://www.bckwon.com/pdf/kgva.pdf"><span class="icon solid fa-book"></span> Knowledge Generation Model for Visual Analytics, Sacha et al.</a>
+														<!--<a href="https://www.cs.ubc.ca/labs/imager/tr/2013/MultiLevelTaskTypology/brehmer_infovis13.pdf"><span class="icon solid fa-book"></span> A Multi-Level Typology of Abstract Visualization Tasks</a><br>
+														<a href="https://www.cc.gatech.edu/~john.stasko/papers/infovis05.pdf"><span class="icon solid fa-book"></span> Low-Level Components of Analytic Activity in Information Visualization</a>-->
+													</td>
+													<td></td>
+												</tr>
+												<tr>
+											
+													<td>11-18</td>
+													<td>
+														Maps<br>
+														<i>Guest Lecture: <a href="https://www.american.edu/cas/faculty/godwin.cfm">Dr. Alex Godwin</a>, American U.</i>
+													</td>
+													<td><a href="https://www.tableau.com/learn/articles/data-visualization/glossary/geospatial"><span class="icon solid fa-book"></span> Skim Tableau GeoVis Primer</a></td>
+													<td></td>
+												</tr>
+												<tr>
+													<td rowspan="2">14</td>
+													<td>11-23</td>
+													<td>
+														<span class="label label-break">CANCELED</span> <i>Enjoy the holiday</i><br>
+														<strike>Time Series</strike>
+													</td>
+													<td>
+														<a href="https://www.youtube.com/watch?v=2lBkEGHYweY"><span class="icon solid fa-film"></span> Streamgraphs, Schwabish and Pazos</a><br>
+														<a href="https://www.youtube.com/watch?v=FHgcJDnW8q8&t=5s"><span class="icon solid fa-film"></span> EventFlow, Monroe et al.</a>
+													</td>
+													<td><span class="label label-group">M4</span> <a href="#group_project">Status Update</a></td>
+												</tr>
+												<tr>
+											
+													<td>11-25</td>
+													<td><span class="label label-break">Break</span> Thanksgiving</td>
+													<td><i><span class="label label-none">Ø No prep</span></i></td>
+													<td></td>
+												</tr>
+												<tr>
+													<td rowspan="2">15</td>
+													<td>11-30</td>
+													<td>VIS Research Flash Talks<br>
+														<i>Guest Speakers: Shiyao Li, <br>
+														Yanan Da, and Ziwei Dong</i>
+													</td>
+													<td><i><span class="label label-none">Ø No prep</span></i></td>
+													<td></td>
+												</tr>
+												<tr>
+												
+													<td>12-02</td>
+													<td><span class="label label-group">Group</span> Project Presentations</td>
+													<td><i><span class="label label-none">Ø No prep</span></i></td>
+													<td></td>
+												</tr>
+												<tr>
+													<td rowspan="2">16</td>
+													<td>12-07</td>
+													<td><span class="label label-group">Group</span> Project Presentations</td>
+													<td><i><span class="label label-none">Ø No prep</span></i></td>
+													<td></td>
+												</tr>
+												<tr>
+												
+													<td>12-10</td>
+													<td><i><span class="label label-flex">Flex</span></i> (Final Exam period: 8:00a - 10:30a)</td>
+													<td><i><span class="label label-none">Ø No prep</span></i></td>
+													<td><a href="group_project"><span class="label label-group">M5</span> <a href="#group_project">Final Deliverables</a></td>
+												</tr>
+											</tbody>
+										</table>
+									</div>
+
+								</section>
+
+
+							<!-- Section -->
+								<section>
+									<header class="major">
+										<h2 id="resources">Resources</h2>
+									</header>
+
+									<div class="row">
+										<div class="col-6 col-12-medium">
+											<h3>Textbooks</h3>
+											<table>
+												<tr>
+													<td style="width: 50%;">
+														<center>
+															<a href="https://www.amazon.com/dp/0961392142/ref=cm_sw_em_r_mt_dp_40RZN78742G017VDB995">
+																<img src="images/visual_display_textbook.jpeg" alt='visual display of quantiative information textbook' style="display: block; margin-left: auto; margin-right: auto; width: 50%;"/><br>
+																		The Visual Display of Quantitative Information (VDQI), Edward Tufte
+															</a><br>
+															<span class="optional">Optional</span>
+														</center>
+													</td>
+													<td style="width: 50%;">
+														<center>
+															<a href="https://www.amazon.com/dp/1324001569/ref=cm_sw_em_r_mt_dp_6VQA8VHNEG8JNZ5QDBND">
+																<img src="images/how_charts_lie_textbook.jpeg" alt='how charts lie textbook' style="display: block; margin-left: auto; margin-right: auto; width: 50%;"/><br>
+												                    	How Charts Lie: Getting Smarter about Visual Information, Alberto Cairo
+										                    </a><br>
+										                    <span class="optional">Optional</span>
+										                </center>
+									                </td>
+									            </tr>
+									        </table>
+									    </div>
+										<div class="col-6 col-12-medium">
+											<h3>Technology Requisites</h3>
+											<p>
+												<span class="icon solid fa-code"></span> <b><a href="https://d3js.org">D3</a></b>
+											</p>
+											<p>
+												<span class="icon solid fa-chart-bar"></span> <b><a href="https://www.tableau.com">Tableau</a></b> (free version available via Tableau for Higher Education)
+											</p>
+											<p>
+												<span class="icon brands fa fa-github"></span> <b><a href="https://github.com">Github</a></b>
+										</div>
+									</div>
+									<div class="row">
+										<div class="col">
+											<h3>Optional Resources</h3>
+											<hr class="minor"/>
+										</div>
+									</div>
+									<div class="row">
+										<div class="col-4 col-12-medium">
+											<h4>Programming</h4>
+											<p>
+												<b>D3:</b> <a href="https://observablehq.com/@d3/gallery">Examples</a>; <a href="https://observablehq.com/@d3/learn-d3">Tutorials</a>; <a href="https://github.com/d3/d3/wiki">Documentation</a>
+											</p>
+											<p>
+												<b>Front-end Web Stack</b>:<br> 
+												Tutorials: <a href="https://github.com/UBC-InfoVis/2021-436V-tutorials/tree/master/0_Web_Tutorial">From Tamara Munzner's VIS Course</a><br>
+												HTML: <a href="https://developer.mozilla.org/en-US/docs/Learn/HTML">Mozilla Dev Network</a><br>
+												CSS: <a href="https://developer.mozilla.org/en-US/docs/Learn/CSS">Mozilla Dev Network</a>; <a href="http://www.csszengarden.com">CSS Zen Garden</a><br>
+												SVG: <a href="https://www.petercollingridge.co.uk/tutorials/svg/">Tutorial</a><br>
+												Javascript: <a href="https://eloquentjavascript.net">Mozilla Dev Network</a>; <a href="http://bonsaiden.github.io/JavaScript-Garden/">Javascript Garden</a>; <a href="http://eloquentjavascript.net">Eloquent Javascript</a>; <a href="http://addyosmani.com/resources/essentialjsdesignpatterns/book/">Design Patterns</a><br>
+												Javascript Frameworks: <a href="https://reactjs.org/">React</a>; <a href="https://vuejs.org/">Vue</a><br>
+												Syntax Alternatives: <a href="http://www.typescriptlang.org/">Typescript</a>
+											</p>
+											<p>
+												<b>Other Vis Toolkits:</b> <a href="https://vega.github.io">Vega</a>; <a href="http://vega.github.io/vega-lite">Vega-Lite</a>; <a href="https://p5js.org">P5.js</a> and <a href="http://processing.org/">Processing</a>; <a href="https://matplotlib.org">Matplotlib</a> and <a href="https://seaborn.pydata.org">Seaborn</a> (for Python); <a href="https://ggplot2.tidyverse.org/">GGPlot2</a> (for R)
+											</p>
+											<p>
+												<b>Github:</b> <a href="https://guides.github.com">Tutorials</a>
+											</p>
+											<p>
+												<b>Web Scraping:</b> <a href="https://www.crummy.com/software/BeautifulSoup/bs4/doc/">Beautiful Soup (Python)</a>
+											</p>
+										</div>
+										<div class="col-4 col-12-medium">
+											<h4>Systems, Data, Colors, etc.</h4>
+											<p>
+												<b>Systems:</b> <a href="https://www.tableau.com/community/academic">Tableau</a>; <a href="http://spotfire.tibco.com/">Spotfire</a>; <a href="https://www.qlik.com/us/">Qlik</a>
+											</p>
+											<p>
+												<b>Data:</b> <a href="https://www.census.gov">Census.gov</a>; <a href="http://www.data.gov">Data.gov</a>; <a href="https://public.tableau.com/en-us/s/resources">Tableau Data</a>; <a href="https://www.reddit.com/r/opendata/">/r/opendata</a>; <a href="https://www.quandl.com">Quandl</a>; <a href="http://metrobostondatacommon.org/">Metro Boston Data Common</a>; <a href="http://www.cdc.gov/nchs/data_access/data_tools.htm">CDC</a>; <a href="http://www.realclimate.org/index.php/data-sources/">Real Climate</a>; <a href="http://www.statistics.gov.uk/default.asp">UK Office for National Statistics</a>; <a href="https://datacatalog.worldbank.org">World Bank Data Catalog</a>; <a href="https://www.basketball-reference.com">Basketball</a>; <a href="http://data.un.org">UN Data</a>; <a href="https://www.who.int/data/">WHO Data</a>; <a href="http://stats.oecd.org/Index.aspx">OECD Stats</a>
+											</p>
+											<p>
+												<b>Color:</b> <a href="http://www.colorbrewer2.com/">Color Brewer 2.0</a>; <a href="http://0to255.com/">0 to 255</a>
+											</p>
+											<p>
+												<b>Example Visualizations:</b> <a href="https://exhibits.stanford.edu/dataviz/feature/space-and-time">Data Visualization and the Modern Imagination</a>; <a href="https://www.babynamewizard.com/voyager#prefix=&sw=both&exact=false">Baby Name Wizard</a>
+											</p>
+											<p>
+												<b>Document Scanning:</b> <a href="https://apps.apple.com/us/app/camscanner-pdf-scanner-app/id1543833156?mt=12">CamScanner</a> (useful for scanning in paper sketches to submit assignments online)
+											</p>
+										</div>
+										<div class="col-4 col-12-medium">
+											<h4>Additional Texts</h4>
+											<p>
+												<b>Alberto Cairo:</b> <a href="http://www.thefunctionalart.com/p/reviews.html">How Charts Lie</a>; <a href="http://www.thefunctionalart.com/p/the-truthful-art-book.html">The Truthful Art</a>; <a href="http://www.thefunctionalart.com/p/about-book.html">The Functional Art</a>
+											</p>
+											<p>
+												<b>Edward Tufte:</b> <a href="https://www.edwardtufte.com/tufte/books_vdqi">The Visual Display of Quantitative Information</a>; <a href="https://www.edwardtufte.com/tufte/books_ei">Envisioning Information</a>
+											</p>
+											<p>
+												<b>Colin Ware:</b> <a href="https://www.amazon.com/Information-Visualization-Third-Edition-Technologies/dp/0123814642/%22">Information Visualization: Perception for Design</a>
+											</p>
+											<p>
+												<b>David McCandless:</b> <a href="https://informationisbeautiful.net/books/">Information is Beautiful</a>
+											</p>
+											<p>
+												<b>Tamara Munzner:</b> <a href="https://www.cs.ubc.ca/~tmm/vadbook/">Visualization Analysis & Design</a>
+											</p>
+											<p>
+												<b>Blogs:</b> <a href="https://jts3blog.wordpress.com">As I See It (John Stasko)</a>; <a href="https://eagereyes.org">EagerEyes (Robert Kosara)</a>; <a href="https://mcorrell.medium.com">Michael Correll</a>; <a href="https://medium.com/nightingale">Nightingale</a>; <a href="https://datastori.es/">Data Stories Podcast</a>; <a href="https://www.visualcinnamon.com/blog/">Visual Cinnamon (Nadieh Bremer)</a>; <a href="https://sxywu.com/">Shirley Wu</a>; <a href="https://www.reddit.com/r/dataisbeautiful/">/r/dataisbeautiful</a>; <a href="http://www.informationisbeautiful.net/">Information is Beautiful</a>; <a href="http://flowingdata.com/">Flowing Data</a>; <a href="http://www.thefunctionalart.com/">The Functional Art (Alberto Cairo)</a>; <a href="http://www.storytellingwithdata.com/blog">Storytelling with Data</a>; <a href="http://www.perceptualedge.com/blog/">Visual Business Intelligence (Stephen Few)</a>; <a href="https://statmodeling.stat.columbia.edu">Stat Modeling</a>; <a href="http://www.visualcomplexity.com/vc/">Visual Complexity (Manuel Lima)</a>
+											</p>
+										</div>
+									</div>
+
+								</section>
+
+
+
+								<!-- Section -->
+								<section>
+									<header class="major">
+										<h2 id="policies">Policies</h2>
+									</header>
+
+									<div class="row">
+										<div class="col-6 col-12-small">
+											<h3>Timeliness</h3>
+											<p>All assignments are due at the start of class on the day listed in the schedule. You will have a total of 3 “free” late days to use for any homework assignments as needed throughout the course (e.g., you can use 1 late day for HW1 and 1 for HW3, …). These "free" days can apply only to <i>homework assignments</i> and cannot be used for research presentations or group projects. These are for any cases where Institute-approved absences do not apply, and no reason must be given to use them. After the 3 “free” late days are used up, any late assignments will receive a 10% per day penalty. Assignments turned in one week or later past the due date will not be graded and given a 0. Note that you <i>have to clearly note on your assignment if you want to apply your late days</i>. This has to be done at the time of submission, not later in the course. Once you use them, you cannot switch them later in the course, so plan wisely.</p>
+										</div>
+										<div class="col-6 col-12-small">
+											<h3>Academic Honesty</h3>
+											<p>Emory aims to cultivate a community based on trust, academic integrity, and honor. Students are expected to act according to the highest ethical standards. For information on Emory’s Honor Code, please visit <a href="http://catalog.college.emory.edu/academic/policies-regulations/honor-code.html">here</a>.</p>
+
+											<p>Any student suspected of cheating or plagiarizing on a quiz, exam, or assignment will be reported to the <a href="http://conduct.emory.edu">Office of Student Conduct</a>, who will investigate the incident and identify the appropriate penalty for violations.</p>
+
+											<p>Unless explicitly stated otherwise, you are expected to complete assignments on your own. It is appropriate to discuss your ideas with others to gain feedback and help with sticky problems.  It is not appropriate to find an existing solution online or from your friends, modify them, and submit as your own work.  If in doubt, confer with your instructor. It is much easier to ask about these things than handle the consequences of a poor decision.</p>
+										</div>
+
+										<div class="col-6 col-12-small">
+											<h3>Regrade Policy</h3>
+											<p>You can request a re-grade of an assignment within <b>seven days</b> of releasing the grade by sending an email to the course staff. The request should contain a <b>written explanation of why you think that the grade is incorrect</b>. We will look over your work again upon request. If we spot errors in grading, we will fix the error. This may end up assigning a lower score than the original if we find additional errors.</p>
+										</div>
+										<div class="col-6 col-12-small">
+											<h3>Student Support Services</h3>
+											<p>In your time at Emory, you may find yourself in need of support. <a href="http://college.emory.edu/oue/current-students/student-support/index.html">Here</a> you will find some resources to support you both as a student and as a person.</p>
+										</div>
+
+										<div class="col-6 col-12-small">
+										</div>
+										<div class="col-6 col-12-small">
+											<h3>Office of Accessibility Services</h3>
+											<p>Your success in this class is important to me. We all need accommodations because we all learn differently. If there are aspects of this course that prevent you from learning or exclude you, let me know as soon as possible. Together we'll develop strategies to meet both your needs and the requirements of the course.</p>
+
+											<p>I encourage you to visit the Office of Accessibility Services to determine how you could improve your learning as well. If you need official accommodations, you have a right to have these met. Students must renew their accommodation letter every semester they attend classes. Contact the Office of Accessibility Services for more information at (404) 727-9877 or email at <a href="mailto:accessibility@emory.edu">accessibility@emory.edu</a>. Additional information is available at the <a href="http://equityandinclusion.emory.edu">OAS website</a>.</p> 
+										</div>
+									</div>
+								</section>
+
+
+								<section>
+									<div class="content">
+										<header class="major">
+											<h2 id="contact">Contact</h2>
+										</header>
+										<header>
+											<h4>Instructor: Dr. Emily Wall</h4>
+											<p>
+												<a href="mailto:emily.wall@emory.edu?Subject=CS485/584%20Question"><i class="fa fa-envelope" aria-hidden="true"></i> emily.wall@emory.edu</a> <br><br>
+
+												Virtual Office Hours: Th 9:45am-10:45am (right after class, or by appointment) via <a href="https://emory.zoom.us/j/7933276908?pwd=NlExWEg5cjN6SkUrd2JuVjdGS1M3QT09"><i class="fa fa-video" aria-hidden="true"></i> Zoom</a><br><br>
+
+								                <a href="https://emilywall.github.io"><i class="fa fa-globe" aria-hidden="true"></i> emilywall.github.io</a><br><br>
+
+											</p>
+										</header>
+										<header>
+											<h4>Teaching Assistant: Shiyao Li</h4>
+											<p>
+												<a href="mailto:shiyao.li@emory.edu?Subject=CS485/584%20Question"><i class="fa fa-envelope" aria-hidden="true"></i> shiyao.li@emory.edu</a> <br><br>
+
+												Virtual Office Hours: F 10am-11am EST (or by appointment) via <a href="https://emory.zoom.us/j/91837095618"><i class="fa fa-video" aria-hidden="true"></i> Zoom</a><br><br>
+
+								                <a href="https://shiyaol.github.io/"><i class="fa fa-globe" aria-hidden="true"></i> shiyaol.github.io</a><br><br>
+
+											</p>
+										</header>
+									</div>
+								</section>
+
+
+								<section>
+									<div class="content">
+										<footer id="footer">
+											<header class="minor">
+												<h5>Acknowledgements</h5>
+											</header>
+											<p class="copyright">This course was developed by <a href="emilywall.github.io">Emily Wall</a> at Emory University, with an abundance of inspiration and gratitude from Visualization courses taught by <a href="https://www.jagodwin.com">Alex Godwin</a> at American University, <a href="http://users.eecs.northwestern.edu/~jhullman/">Jessica Hullman</a> at Northwestern University, <a href="https://homes.cs.washington.edu/~jheer/">Jeff Heer</a> at University of Washington, <a href="https://www.cs.ubc.ca/~tmm/">Tamara Munzner</a> at UBC, and <a href="http://va.gatech.edu/endert/">Alex Endert</a>, <a href="https://www.cc.gatech.edu/~john.stasko/">John Stasko</a>, and <a href="https://poloclub.github.io">Polo Chau</a> at Georgia Tech.</p>
+										</footer>
+									</div>
+								</section>
+
+						</div>
+					</div>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="../assets/js/jquery.min.js"></script>
+			<script src="../assets/js/browser.min.js"></script>
+			<script src="../assets/js/breakpoints.min.js"></script>
+			<script src="../assets/js/util.js"></script>
+			<script src="../assets/js/main.js"></script>
+	</body>
+</html>
