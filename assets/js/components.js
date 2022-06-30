@@ -153,6 +153,24 @@ class Grad extends HTMLElement {
 	}
 }
 
+class GroupMilestone extends HTMLElement {
+	constructor() {
+		super();
+	}
+	connectedCallback() {
+		this.innerHTML = `<span class="label label-sprint">M <span class="icon solid fa-edit"></span></span>`;
+	}
+}
+
+class Homework extends HTMLElement {
+	constructor() {
+		super();
+	}
+	connectedCallback() {
+		this.innerHTML = `<span class="label label-flex">HW <span class="icon solid fa-edit"></span></span>`;
+	}
+}
+
 
 
 
@@ -176,3 +194,5 @@ customElements.define('no-lecture', NoLecture);
 customElements.define('flex-day', FlexDay);
 customElements.define('guest-today', Guest);
 customElements.define('grad-presentation', Grad);
+customElements.define('group-milestone', GroupMilestone);
+customElements.define('hw-assignment', Homework);
