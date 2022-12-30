@@ -81,6 +81,15 @@ class NoPrep extends HTMLElement {
 	}
 }
 
+class DS extends HTMLElement {
+	constructor() {
+		super();
+	}
+	connectedCallback() {
+		this.innerHTML = `<span class="label label-sprint">DS</span>`;
+	}
+}
+
 class DSStart extends HTMLElement {
 	constructor() {
 		super();
@@ -186,6 +195,7 @@ customElements.define('hack-day', Hack);
 customElements.define('demo-day', Demo);
 customElements.define('quiz-today', Quiz);
 customElements.define('no-prep', NoPrep);
+customElements.define('d-s', DS);
 customElements.define('ds-start', DSStart);
 customElements.define('ds-end', DSEnd);
 customElements.define('i-a', IA);
