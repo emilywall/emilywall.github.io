@@ -34,14 +34,14 @@
 									<div id="topwrapper2">
 										<div><a href="../hci-s22.html" class="logo"><strong>Human</strong> Computer Interaction</a></div>
 										<div><ul class="topnav">
-											<li><a href="../hci-s22.html">Home</a></li>
+											<li><a href="../index.html">Home</a></li>
 											<!--<li><a href="index.html">About</a></li>-->
-											<li><a href="../hci-s22.html#objectives">Objectives</a></li>
-											<li><a href="../hci-s22.html#assignments">Assignments & Responsibilities</a></li>
-											<li><a href="../hci-s22.html#schedule">Schedule</a></li>
-											<li><a href="../hci-s22.html#resources">Resources</a></li>
-											<li><a href="../hci-s22.html#policies">Policies</a></li>
-											<li><a href="../hci-s22.html#contact">Contact</a></li>
+											<li><a href="../index.html#objectives">Objectives</a></li>
+											<li><a href="../index.html#assignments">Assignments & Responsibilities</a></li>
+											<li><a href="../index.html#schedule">Schedule</a></li>
+											<li><a href="../resources/index.html">Resources</a></li>
+											<li><a href="../index.html#policies">Policies</a></li>
+											<li><a href="../index.html#contact">Contact</a></li>
 										</ul></div>
 									</div>
 								</header>
@@ -63,18 +63,30 @@
 
 									<p>In this design sprint, we will be <strong>exploring virtual reality to consider what it will be like when computation can transport us to another place.</strong> Transport someone to a real location, inside a game, among abstract art… whatever you think would be interesting, immersive, and compelling!</p>
 
-									<p>As your final design sprint of the semester, consider this to be your most open-ended assignment. You pick your objective, you decide how to design for it, you decide what to build.</p>
-
-									<p>That’s it.</p>
+									<p>That’s it. Keep in mind that the lack of parameters in this project does not mean that the your project should not be appropriately scoped. It is your job to define the parameters of your project. You pick your objective, you decide how to design for it, you decide what to build. Be sure that you communicate all of these assumptions in your blog post.</p>
 
 									<p>A couple of quick pointers before you start:</p>
 									<ul>
-									  <li><strong>Be sure to articulate your design goal EARLY.</strong> Without an objective for your design, much of your process will be unguided. When I look at your output, I will consider them <em>within the context of your design goal</em>. If your goal is to provide a sense of awe or provoke reflection or make someone feel like they are truly in another physical place… any of that is fine. The key is that you articulate your goal and make design decisions that align with that objective.</li>
+									  <li><strong>Be sure to articulate your design goal EARLY.</strong> Without an objective for your design, much of your process will be unguided. When I look at your output, I will consider them <em>within the context of your design goal</em>. If your goal is to provide a sense of awe or provoke reflection or make someone feel like they are truly in another physical place… any of that is fine. The key is that you articulate your goal and make design decisions that align with that objective. The execution of your project will be evaluated against those goals. </li>
 									  <li><strong>Consider what will make your design feel immersive.</strong> This is your primary challenge, and it’s worth thinking beyond visual channels. How could audio enhance your design?</li>
-									  <li><strong>Careful with interaction.</strong> Because of time and hardware limitations (you’ll be using <a href="https://aframe.io/">A-Frame</a> + <a href="https://vr.google.com/cardboard/">Google cardboard</a>), consider what input mechanisms you may even have available to you before getting too deep into the development.</li>
+									  <li><strong>Careful with interaction.</strong> Because of time and hardware limitations (you’ll likely be using <a href="https://aframe.io/">A-Frame</a> + <a href="https://vr.google.com/cardboard/">Google cardboard</a>), consider what input mechanisms you may even have available to you before getting too deep into the development.</li>
 									</ul>
 
 									<hr class="minor" />
+
+									
+									<h3 id="tech">Technology</h3>
+
+									<p>
+										<strong>Google Cardboard</strong>: I've purchased several <a href="https://www.youtube.com/watch?v=SxAj2lyX4oU">Google Cardboard</a> viewers. If you haven't used this before, you essentially can insert your phone into a low-cost carboard holder. It uses a binocular viewing port (two separate lenses) that can simulate depth in a virtual scene. Strapped to your face, the cardboard contraption uses your phone's gyroscope to track your movements and allow you to move around a scene. To use it, visit your VR scene in the web browser on your phone, then insert your phone in the Cardboard. Check out some of the <a href="https://play.google.com/store/search?q=cardboard+apps&c=apps&hl=en_US&pli=1">apps that have been developed for Google Cardboard</a> for some ideas of what is possible. 
+									</p> 
+
+									<p>
+										<strong>A-Frame</strong>: <a href="https://aframe.io/">A-Frame</a> is a simple, web-based design platform that uses HTML to create VR scenes. In addition, a companion website - <a href="https://glitch.com/">Glitch</a> - provides a fantastic web-based development environment that will allow you to see your code + output simultaneously. Although the building blocks of A-Frame are basic, don’t underestimate its powerful potential. Before you start, <a href="https://aframe.io/blog/">check out all of the interesting work people in the A-Frame community are up to</a>. <i>You need not use A-Frame</i>. If your group is familiar with an alternative (Unity, etc), feel free to use that instead. 
+									</p>
+
+									<hr class="minor" />
+
 
 									<h3 id="deliverables">Deliverables</h3>
 									<ul>
@@ -87,11 +99,13 @@
 
 									<h3 id="some-technical-hints-using-aframe">Some Technical Hints: Using A-Frame</h3>
 
-									<p><a href="https://aframe.io/">A-Frame</a> is a simple, web-based design platform that uses HTML to create VR scenes. In addition, a companion website - <a href="https://glitch.com/">Glitch</a> - provides a fantastic web-based development environment that will allow you to see your code + output simultaneously. Although the building blocks of A-Frame are basic, don’t underestimate its powerful potential. Before you start, <a href="https://aframe.io/blog/">check out all of the interesting work people in the A-Frame community are up to</a>.</p>
-
-									<p>There are a number of resources to get you up to speed - <a href="https://aframe.io/aframe-school">A-Frame school</a>, <a href="https://aframevr-slack.herokuapp.com/">A-Frame slack</a>, and various other tutorials blog posts if you simply Google <em>A-Frame</em></p>
+									<p></p>
 
 									<!--<p>Finally, if you really want something interactive, you could explore <a href="https://github.com/openleap/aframe-leap-hands">integrating the Leap Motion with A-Frame</a>. <em>Note: I HAVE NOT TRIED THIS, so it’s difficult for me to gauge how difficult this integration is</em></p>-->
+
+									<p>
+										There are a number of resources to get you up to speed - <a href="https://aframe.io/aframe-school">A-Frame school</a>, <a href="https://aframevr-slack.herokuapp.com/">A-Frame slack</a>, and various other tutorials blog posts if you simply Google <em>A-Frame</em>.
+									</p>
 
 									<h4 id="getting-familiar-with-aframe">Getting Familiar with A-Frame</h4>
 									<p><em>Some tips from Gabbi LaBorwit (Bucknell ‘20)</em></p>
@@ -150,11 +164,11 @@
 			</div>
 
 		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/browser.min.js"></script>
-			<script src="assets/js/breakpoints.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<script src="assets/js/main.js"></script>
+			<script src="../../assets/js/jquery.min.js"></script>
+			<script src="../../assets/js/browser.min.js"></script>
+			<script src="../../assets/js/breakpoints.min.js"></script>
+			<script src="../../assets/js/util.js"></script>
+			<script src="../../assets/js/main.js"></script>
 
 	</body>
 </html>
