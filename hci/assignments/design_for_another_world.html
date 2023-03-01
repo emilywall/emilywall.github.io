@@ -69,7 +69,8 @@
 									<ul>
 									  <li><strong>Be sure to articulate your design goal EARLY.</strong> Without an objective for your design, much of your process will be unguided. When I look at your output, I will consider them <em>within the context of your design goal</em>. If your goal is to provide a sense of awe or provoke reflection or make someone feel like they are truly in another physical place… any of that is fine. The key is that you articulate your goal and make design decisions that align with that objective. The execution of your project will be evaluated against those goals. </li>
 									  <li><strong>Consider what will make your design feel immersive.</strong> This is your primary challenge, and it’s worth thinking beyond visual channels. How could audio enhance your design?</li>
-									  <li><strong>Careful with interaction.</strong> Because of time and hardware limitations (you’ll likely be using <a href="https://aframe.io/">A-Frame</a> + <a href="https://vr.google.com/cardboard/">Google cardboard</a>), consider what input mechanisms you may even have available to you before getting too deep into the development. If you have experience with it or want to dive in, you may also choose to use <a href="https://unity.com">Unity</a>.</li>
+									  <li><strong>Careful with interaction.</strong> Because of time and hardware limitations (you’ll likely be using <a href="https://aframe.io/">A-Frame</a> or <a href="https://unity.com">Unity</a> + <a href="https://vr.google.com/cardboard/">Google cardboard</a> or a comparable VR viewer), consider what input mechanisms you may even have available to you before getting too deep into the development. If you have experience with it or want to dive in, you may prefer to use <a href="https://unity.com">Unity</a>, although <a href="https://aframe.io/">A-Frame</a> can be a bit easier to learn.</li>
+									  <li><strong>Design ambitiously.</strong> Learning to develop with new technologies is hard -- but rapid prototyping for design is important, so try your best. All of these cautions aside, the TAs and I would <i>much</i> rather see a buggy implementation of an ambitious design than a fully operational implementation of a "safe" design. Take chances, and if the implementation doesn't work out, <i>that's ok</i>.</li>
 									</ul>
 
 									<hr class="minor" />
@@ -78,16 +79,17 @@
 									<h3 id="tech">Technology</h3>
 
 									<p>
-										<strong>Google Cardboard</strong>: I've purchased several <a href="https://www.youtube.com/watch?v=SxAj2lyX4oU">Google Cardboard</a> viewers. If you haven't used this before, you essentially can insert your phone into a low-cost carboard holder. It uses a binocular viewing port (two separate lenses) that can simulate depth in a virtual scene. Strapped to your face, the cardboard contraption uses your phone's gyroscope to track your movements and allow you to move around a scene. To use it, visit your VR scene in the web browser on your phone, then insert your phone in the Cardboard. Check out some of the <a href="https://play.google.com/store/search?q=cardboard+apps&c=apps&hl=en_US&pli=1">apps that have been developed for Google Cardboard</a> for some ideas of what is possible. 
+										<strong>VR Viewers</strong>: I've purchased several <a href="https://www.youtube.com/watch?v=ync2lRlTZng">VR Shinecon viewers</a> (equivalent to e.g., <a href="https://www.youtube.com/watch?v=SxAj2lyX4oU">Google Cardboard</a>). If you haven't used this before, you essentially can insert your phone into a low-cost VR viewer. It uses a binocular viewing port (two separate lenses) that can simulate depth in a virtual scene. Strapped to your face, the viewer uses your phone's gyroscope to track your movements and allow you to move around a scene. To use it, visit your VR scene in the web browser on your phone, then insert your phone in the viewer. Check out some of the <a href="https://play.google.com/store/search?q=cardboard+apps&c=apps&hl=en_US&pli=1">apps that have been developed for Google Cardboard</a> for some ideas of what is possible. 
 									</p> 
-
-									<p>
-										<strong>A-Frame</strong>: <a href="https://aframe.io/">A-Frame</a> is a simple, web-based design platform that uses HTML to create VR scenes. In addition, a companion website - <a href="https://glitch.com/">Glitch</a> - provides a fantastic web-based development environment that will allow you to see your code + output simultaneously. Although the building blocks of A-Frame are basic, don’t underestimate its powerful potential. Before you start, <a href="https://aframe.io/blog/">check out all of the interesting work people in the A-Frame community are up to</a>. <i>You need not use A-Frame</i>. If your group is familiar with an alternative (Unity, etc), feel free to use that instead. 
-									</p>
 
 									<p>
 										<strong>Unity</strong>: <a href="https://unity.com">Unity</a> is a development platform and game engine for AR and VR. It relies primarily on coding in C#. Find resources <a href="https://learn.unity.com">on the web</a> to get started.
 									</p>
+
+									<p>
+										<strong>A-Frame</strong>: <a href="https://aframe.io/">A-Frame</a> is a simple, web-based design platform that uses HTML to create VR scenes. In addition, a companion website - <a href="https://glitch.com/">Glitch</a> - provides a fantastic web-based development environment that will allow you to see your code + output simultaneously. Although the building blocks of A-Frame are basic, don’t underestimate its powerful potential. This is a good option if you prefer a "coding-lite" approach. Before you start, <a href="https://aframe.io/blog/">check out all of the interesting work people in the A-Frame community are up to</a>. <i>You need not use A-Frame</i>. If your group is familiar with an alternative (Unity, etc), feel free to use that instead. 
+									</p>
+
 
 									<hr class="minor" />
 
@@ -103,12 +105,14 @@
 
 									<h3 id="some-technical-hints-using-aframe">Some Technical Hints: Using A-Frame</h3>
 
-									<p></p>
+									<p>
+										Should you choose to use A-Frame, here are some tips compiled by <a href="https://evanpeck.github.io">Evan Peck</a>. A word of caution: it looks like they just had an update recently after a couple of quiet COVID-years. I haven't used this latest version! 
+									</p>
 
 									<!--<p>Finally, if you really want something interactive, you could explore <a href="https://github.com/openleap/aframe-leap-hands">integrating the Leap Motion with A-Frame</a>. <em>Note: I HAVE NOT TRIED THIS, so it’s difficult for me to gauge how difficult this integration is</em></p>-->
 
 									<p>
-										There are a number of resources to get you up to speed - <a href="https://aframe.io/aframe-school">A-Frame school</a>, <a href="https://aframevr-slack.herokuapp.com/">A-Frame slack</a>, and various other tutorials blog posts if you simply Google <em>A-Frame</em>.
+										There are a number of resources to get you up to speed - <a href="https://aframe.io/aframe-school">A-Frame school</a>, which links to a Slack channel, and there are of course various other tutorials blog posts if you simply Google <em>A-Frame</em>.
 									</p>
 
 									<h4 id="getting-familiar-with-aframe">Getting Familiar with A-Frame</h4>
@@ -125,9 +129,9 @@
 									  <li>
 									    <p>Read the first half of the <a href="https://aframe.io/docs/0.5.0/introduction/#getting-started">“Getting Started”</a> instructions and click the link provided to remix the starter example. When a box appears with 3 options, select “Remix your own” and sign in to your Github account from the button in the top-right corner.</p>
 									  </li>
-									  <li>Back on the Glitch web-editor go to <code class="highlighter-rouge">index.html</code> and click “Show Live” in the top left corner to view what you have so far. Now go back and “remix” the code to make it your own.
+									  <li>Back on the Glitch web-editor go to <code class="highlighter-rouge">index.html</code> and click “Preview” in the bottom row of buttons to view what you have so far. Now go back and “remix” the code to make it your own.
 									    <ul>
-									      <li>Note: There’s no need to constantly refresh the Live page, it automatically updates itself and saves the code.</li>
+									      <li>Note: There’s no need to constantly refresh the page, it automatically updates itself and saves the code in the Preview.</li>
 									    </ul>
 									  </li>
 									  <li>In the top-left corner click the drop-down menu with your glitch username and select “Remix This”. Replace the code in <code class="highlighter-rouge">index.html</code> with the following basic template:</li>
@@ -156,7 +160,7 @@
 									  <li>You can use this <a href="https://aframe.io/docs/0.5.0/guides/building-a-basic-scene.html">tutorial</a> to build a basic scene and go from there, too.</li>
 									  <li>Scroll down the left-sidebar on the <a href="https://aframe.io/docs/0.5.0/introduction/">documentation</a> page to find a bunch of tutorials for animations, sound, and more.</li>
 									  <li>Some cool <a href="https://aframe.io/docs/0.5.0/core/animations.html#direction_alternate">animations</a> to play with.</li>
-									  <li>To take your own 360º picture, download the free app on an iPhone called “360 Panorama” by Occipital, Inc and send yourself the photo to get it on your computer. <!--An <a href="https://ambiguous-hare.glitch.me/">example</a> I made.--></li>
+									  <li>To take your own 360º picture, download the free app on an iPhone called “360 Panorama” by Occipital, Inc (or any other comparable 360º photo app) and send yourself the photo to get it on your computer. <!--An <a href="https://ambiguous-hare.glitch.me/">example</a> I made.--></li>
 									  <li><em>Interacting with objects</em>: If you want to be able to click on objects or do things when you look at an object, look at this <a href="https://www.youtube.com/watch?v=yM89f0GLzB0">tutorial</a> on youtube as well as the <a href="https://github.com/SonarSystems/A-Frame-WebVR-Tutorials/blob/master/%5B6%5D%20Interacting%20With%20Objects/index.html">code</a> that comes with it.</li>
 									</ul>
 
