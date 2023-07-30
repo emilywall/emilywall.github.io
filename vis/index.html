@@ -268,11 +268,16 @@
 													<td class="legend">
 														<break-today></break-today> = No Lecture
 													</td>
+												</tr>
+												<tr>
 													<td class="legend">
-														<hw-assignment></hw-assignment> = Homework
+														<poetry-milestone></poetry-milestone> = Poetry Project Milestone
 													</td>
 													<td class="legend">
-														<group-milestone></group-milestone> = Group Project Milestone
+														<perform-milestone></perform-milestone> = Group Project Milestone
+													</td>
+													<td class="legend">
+														<hw-assignment></hw-assignment> = Homework
 													</td>
 													<!--<td class="legend">
 														<flex-day></flex-day> = Flex Day
@@ -282,7 +287,71 @@
 										</table>
 									</p>
 
-									<span class="todo">TODO: Update schedule</span>
+									<!-- Orphaned Data:
+													<td>Tools of the Trade: D3<br>
+														<span class="todo">D3 lecture?</span>
+														</td>
+													<td>
+														<a href="http://www.cs.kent.edu/~zwang/schedule/lj8.pdf"><read-this></read-this> D3, Bostock et al.</a><br>
+														<opt-this></opt-this> <a href="https://www.youtube.com/watch?v=TOJ9yjvlapY"><watch-this></watch-this> D3 Bar Chart Tutorial Video</a><br>
+														<opt-this></opt-this> <a href="https://classroom.github.com/a/gFglalLa">Web Programming Tutorial</a> <i>(if you are not already familiar)</i>
+													</td>
+
+													<td>
+														D3 Data Transformation, Selection, and Joins<br>
+														<guest-today></guest-today> <i>Tutorial by: Kevin</i>
+													</td>
+													<td>
+														<a href="https://observablehq.com/@nyuvis/data-transformation?collection=@nyuvis/guides-and-examples"><look-this></look-this> Data Transformation by NYU Visualization</a><br>
+														<a href="https://observablehq.com/@nyuvis/review?collection=@nyuvis/guides-and-examples"><look-this></look-this> Selections and Joins by NYU Visualization</a><br>
+														<a href="https://observablehq.com/@nyuvis/bar-chart-walk-through?collection=@nyuvis/guides-and-examples"><look-this></look-this> Bar Chart Walkthrough by NYU Visualization</a>
+													</td>
+
+													<td>
+														Uncertainty & Animation<br>
+														<span class="label label-break"><i>Virtual</i> <span class="icon solid fa-globe"></span></span> <a href="http://ieeevis.org/year/2022/welcome">@ IEEE VIS</a>
+													</td>
+													<td>
+														<a href="https://www.youtube.com/watch?v=pTVAn4oLvbc"><watch-this></watch-this> The Visual Uncertainty Experience, Hullman</a><br>
+														<opt-this></opt-this> <a href="http://idl.cs.washington.edu/files/2016-WhenIsMyBus-CHI.pdf"><read-this></read-this> When(ish) Is My Bus, Kay et al.</a><br>
+														<opt-this></opt-this> <a href="http://users.eecs.northwestern.edu/~jhullman/HOPS_PLOS_preprint.pdf"><read-this></read-this> Hypothetical Outcome Plots, Hullman et al.</a>
+													</td>
+
+													<td>Networks & Trees</td>
+													<td>
+														<a href="http://treevis.net"><read-this></read-this> A Visual Bibliography of Tree Visualization, Schulz</a><br> 
+														<a href="https://vimeo.com/237670662"><watch-this></watch-this> Graphiti, Srinivasan et al.</a>
+													</td>
+													
+													<td><a href="https://classroom.github.com/a/2RPSbggB">Design Lab<br>
+														<i>Maps & Networks</i></a>
+													</td>
+													<td><no-prep></no-prep></td>
+
+													<td>
+														Geospatial Visualization<br>
+														<guest-today></guest-today> <i>Guest Lecture: <a href="https://planning.gatech.edu/people/clio-andris">Dr. Clio Andris</a>, Georgia Tech</i>
+														<i>Guest Lecture: <a href="https://www.american.edu/cas/faculty/godwin.cfm">Dr. Alex Godwin</a>, American U.</i>
+													</td>
+													<td><a href="https://www.tableau.com/learn/articles/data-visualization/glossary/geospatial"><read-this></read-this> Skim Tableau GeoVis Primer</a></td>
+
+
+													<td><s>Tasks & Visualization Models</s><br><b>Enjoy the holiday</b></td>
+													<td>
+														<a href="https://www.bckwon.com/pdf/kgva.pdf"><read-this></read-this> Knowledge Generation Model for Visual Analytics, Sacha et al.</a>
+														<opt-this></opt-this> <a href="https://www.cs.ubc.ca/labs/imager/tr/2013/MultiLevelTaskTypology/brehmer_infovis13.pdf"><read-this></read-this> A Multi-Level Typology of Abstract Visualization Tasks</a><br>
+														<opt-this></opt-this> <a href="https://www.cc.gatech.edu/~john.stasko/papers/infovis05.pdf"><read-this></read-this> Low-Level Components of Analytic Activity in Information Visualization</a>
+													</td>
+
+													<td>
+														<span class="label label-group">Group</span> Debate, Topic 3<br>
+														+ Time Series 
+													</td>
+													<td>
+														<a href="https://www.youtube.com/watch?v=2lBkEGHYweY"><watch-this></watch-this> Streamgraphs, Schwabish and Pazos</a><br>
+														<a href="https://www.youtube.com/watch?v=FHgcJDnW8q8&t=5s"><watch-this></watch-this> EventFlow, Monroe et al.</a>
+													</td>
+									-->
 
 									<div class="table-wrapper">
 										<table class="schedule">
@@ -296,81 +365,118 @@
 												</tr>
 											</thead>
 											<tbody>
-												<tr>
+												<tr class="odd">
 													<td>1</td>
-													<td>8-25</td>
-													<td>Introduction to Information Visualization</td>
+													<td>8-23</td>
+													<td>
+														Introduction to Information Visualization <br>
+														<guest-today></guest-today> Meet the team: W.J. Lofton, Thomas Davidson
+													</td>
 													<td>
 														<a href="http://vis.cs.brown.edu/docs/pdf/bib/value-of-infovis.pdf"><read-this></read-this> The Value of Information Visualization, Fekete et al</a><br>
 														<opt-this></opt-this> <a href="https://blogs.ischool.berkeley.edu/i247s13/files/2013/01/Card1999.lowfi_.pdf"><read-this></read-this> Using Vision to Think, Card et al.</a>
 													</td>
 													<td>
-														Complete <a href="https://forms.gle/E851AJWBitdQFMjr6">Background Survey</a>
+														Complete <a href="https://forms.gle/dvPDkM6rMTc5NQic6">Background Survey</a>
 													</td>
 												</tr>
 												<tr>
 													<td rowspan="2">2</td>
-													<td>8-30</td>
+													<td>8-28</td>
 													<td>
 														HTML and Javascript Basics<br>
-														<guest-today></guest-today> <i>Tutorial by: Mengyu</i>
+														<guest-today></guest-today> Thomas Davidson<br>
+														Begin in class: <hw-assignment></hw-assignment> <a href="assignments/homeworks.html">1: Crash Course in Web Development</a> 
 													</td>
 													<td>
 														<a href="https://www.youtube.com/watch?v=xkBheRZTkaw&t=1408s"><watch-this></watch-this> HTML in Data Visualization with D3 by Kelleher</a><br>
 														<a href="https://observablehq.com/@nyuvis/javascript-basics?collection=@nyuvis/guides-and-examples"><look-this></look-this> Javascript Basics by NYU Visualization</a>
 													</td>
 													<td>
-														<opt-this></opt-this> <hw-assignment></hw-assignment> <a href="assignments/homeworks.html">0: Web Development</a> 
 													</td>
 												</tr>
 												<tr>
 													
-													<td>9-01</td>
+													<td>8-30</td>
 													<td>
 														Data<br>
-														<span class="label label-break"><i>Virtual</i> <span class="icon solid fa-globe"></span></span> <a href="https://www.dagstuhl.de">@ Dagstuhl</a>
+														Begin in class: <hw-assignment></hw-assignment> <a href="assignments/homeworks.html">2: Design Static Visualizations</a> 
 													</td>
 													<td>
 														<a href="https://ieeexplore.ieee.org/document/545307"><read-this></read-this> The Eyes Have It, Shneiderman</a>
 													</td>
-													<td></td>
+													<td>
+														<hw-assignment></hw-assignment> <a href="assignments/homeworks.html">1: Crash Course in Web Development</a> 
+													</td>
 												</tr>
-												<tr>
+												<tr class="odd">
 													<td rowspan="2">3</td>
-													<td>9-06</td>
-													<td>Perception</td>
-													<td>
-														<a href="https://www.csc2.ncsu.edu/faculty/healey/PP/index.html"><read-this></read-this> Perception in Visualization, Healey</a>
-													</td>
-													<!--<td>Tools of the Trade: D3<br>
-														<span class="todo">D3 lecture?</span>
-														</td>
-													<td>
-														<a href="http://www.cs.kent.edu/~zwang/schedule/lj8.pdf"><read-this></read-this> D3, Bostock et al.</a><br>
-														<opt-this></opt-this> <a href="https://www.youtube.com/watch?v=TOJ9yjvlapY"><watch-this></watch-this> D3 Bar Chart Tutorial Video</a><br>
-														<opt-this></opt-this> <a href="https://classroom.github.com/a/gFglalLa">Web Programming Tutorial</a> <i>(if you are not already familiar)</i>
-													</td>-->
-													<td>
-														<hw-assignment></hw-assignment> <a href="assignments/homeworks.html">1: Design Static Visualizations</a>
-													</td>
-												</tr>
-												<tr>
-													
-													<td>9-08</td>
-													<td>
-														D3 Data Transformation, Selection, and Joins<br>
-														<guest-today></guest-today> <i>Tutorial by: Kevin</i>
-													</td>
-													<td>
-														<a href="https://observablehq.com/@nyuvis/data-transformation?collection=@nyuvis/guides-and-examples"><look-this></look-this> Data Transformation by NYU Visualization</a><br>
-														<a href="https://observablehq.com/@nyuvis/review?collection=@nyuvis/guides-and-examples"><look-this></look-this> Selections and Joins by NYU Visualization</a><br>
-														<a href="https://observablehq.com/@nyuvis/bar-chart-walk-through?collection=@nyuvis/guides-and-examples"><look-this></look-this> Bar Chart Walkthrough by NYU Visualization</a>
-													</td>
+													<td>9-04</td>
+													<td><break-today></break-today> Labor Day</td></td>
+													<td><no-prep></no-prep></td>
 													<td></td>
+												</tr>
+												<tr class="odd">
+													
+													<td>9-06</td>
+													<td>
+														Communication & Storytelling<br>
+														<guest-today></guest-today> W.J. Lofton, on poetry
+													</td>
+													<td>
+														<a href="https://www.ted.com/talks/david_mccandless_the_beauty_of_data_visualization"><watch-this></watch-this> TED Talk, David McCandless</a>
+														<!--<a href="https://www.youtube.com/watch?v=jbkSRLYSojo"><watch-this></watch-this> GapMinder, Hans Rosling</a><br>
+														<a href="http://www.fallen.io/ww2/"><watch-this></watch-this> Fallen</a><br>
+														<a href="https://ieeexplore-ieee-org.proxy.library.emory.edu/stamp/stamp.jsp?tp=&arnumber=9465643"><read-this></read-this> Designing with Pictographs, Burns et al.</a>-->
+													</td>
+													<td>
+														<perform-milestone></perform-milestone> <a href="assignments/dd_performance.html">1: Role Sign-Up</a><br>
+														<hw-assignment></hw-assignment> <a href="assignments/homeworks.html">2: Design Static Visualizations</a> 
+													</td>
 												</tr>
 												<tr>
 													<td rowspan="2">4</td>
+													<td>9-11</td>
+													<td>
+														<guest-today></guest-today> W.J. Lofton & Shiyao Li<br>
+														Begin in class: <perform-milestone></perform-milestone> <a href="assignments/dd_performance.html">2: Project Pitch</a> 
+													</td>
+													<td><no-prep></no-prep></td>
+													<td></td>
+												</tr>
+												<tr>
+
 													<td>9-13</td>
+													<td>
+														D3: Static Vis Implementation<br>
+														<guest-today></guest-today> Thomas Davidson<br>
+														Begin in class: <hw-assignment></hw-assignment> <a href="assignments/homeworks.html">3: Implement a Bar Chart</a> 
+													</td>
+													<td>
+														<a href="hhttps://observablehq.com/@nyuvis/fundamental-graphs?collection=@nyuvis/guides-and-examples"><look-this></look-this> Fundamental Graphs with D3 by NYU Visualization</a><br>
+														<a href="https://observablehq.com/@nyuvis/interaction?collection=@nyuvis/guides-and-examples"><look-this></look-this> Interaction by NYU Visualization</a><br>
+														<a href="https://observablehq.com/@nyuvis/networks?collection=@nyuvis/guides-and-examples"><look-this></look-this> Networks by NYU Visualization</a>
+													</td>
+													<td>
+														<poetry-milestone></poetry-milestone> <a href="assignments/dd_poetry.html">1: Write a Poem</a>
+													</td>
+												</tr>
+												<tr class="odd">
+													<td rowspan="2">5</td>
+													<td>9-18</td>
+													<td>
+														<perform-milestone></perform-milestone> <a href="assignments/dd_performance.html">2: Project Pitch</a> (presented in class) <br>
+														<guest-today></guest-today> W.J. Lofton & Thomas Davidson
+													</td>
+													<td><no-prep></no-prep></td>
+													<td>
+														<perform-milestone></perform-milestone> <a href="assignments/dd_performance.html">2: Project Pitch</a> (due in class) <br>
+														<hw-assignment></hw-assignment> <a href="assignments/homeworks.html">3: Implement a Bar Chart</a> (due EOD)
+													</td>
+												</tr>
+												<tr class="odd">
+
+													<td>9-20</td>
 													<td>Charts & Visual Encodings</td>
 													<td>
 														<a href="https://queue.acm.org/detail.cfm?id=1805128"><read-this></read-this> A Tour Through the Visualization Zoo, Heer et al.</a><br>
@@ -378,67 +484,25 @@
 														<opt-this></opt-this> <a href="https://www.wnycstudios.org/podcasts/radiolab/segments/211178-rip-rainbow"><listen-this></listen-this> Rippin' the Rainbow a New One</a>
 													</td>
 													<td>
-														<hw-assignment></hw-assignment> <a href="assignments/homeworks.html">2: Implement a Bar Chart</a><br>
-														Check out your assigned date for the <a href="assignments/debate.html">Debate</a>
+														<perform-milestone></perform-milestone> <a href="assignments/dd_performance.html">3: Vote on Project Direction</a>
 													</td>
-												</tr>
-												<tr>
-
-													<td>9-15</td>
-													<td><span class="label label-group">Group</span> Project Pitch & Group Formation</td>
-													<td><no-prep></no-prep></td>
-													<td>
-														<group-milestone></group-milestone> <a href="assignments/group_project.html">1: Project Pitch</a>
-													</td>
-												</tr>
-												<tr>
-													<td rowspan="2">5</td>
-													<td>9-20</td>
-													<td>
-														D3 Fundamental Graphs and Interaction<br>
-														<guest-today></guest-today> <i>Tutorial by: Mengyu</i>
-													</td>
-													<td>
-														<a href="hhttps://observablehq.com/@nyuvis/fundamental-graphs?collection=@nyuvis/guides-and-examples"><look-this></look-this> Fundamental Graphs with D3 by NYU Visualization</a><br>
-														<a href="https://observablehq.com/@nyuvis/interaction?collection=@nyuvis/guides-and-examples"><look-this></look-this> Interaction by NYU Visualization</a><br>
-														<a href="https://observablehq.com/@nyuvis/networks?collection=@nyuvis/guides-and-examples"><look-this></look-this> Networks by NYU Visualization</a>
-													</td>
-													<td>Last day to inform instructor and TAs if you will pursue the <a href="assignments/straight-a.html">Straight-A Shortcut</a></td>
-												</tr>
-												<tr>
-
-													<td>9-22</td>
-													<td>Interaction</td>
-													<td>
-														<a href="https://www.vis4.net/blog/2017/03/in-defense-of-interactive-graphics/"><read-this></read-this> In Defense of Interactive Graphics, Aisch</a><br>
-														<opt-this></opt-this> <a href="https://medium.com/@dominikus/the-end-of-interactive-visualizations-52c585dcafcb"><read-this></read-this> The death of interactive infographics, Baur</a>
-													</td>
-													<td></td>
 												</tr>
 												<tr>
 													<td rowspan="2">6</td>
-													<td>9-27</td>
-													<td>Communication & Storytelling</td>
+													<td>9-25</td>
 													<td>
-														<a href="https://www.ted.com/talks/david_mccandless_the_beauty_of_data_visualization"><watch-this></watch-this> TED Talk, David McCandless</a>
-														<!--<a href="https://www.youtube.com/watch?v=jbkSRLYSojo"><watch-this></watch-this> GapMinder, Hans Rosling</a><br>
-														<a href="http://www.fallen.io/ww2/"><watch-this></watch-this> Fallen</a><br>
-														<a href="https://ieeexplore-ieee-org.proxy.library.emory.edu/stamp/stamp.jsp?tp=&arnumber=9465643"><read-this></read-this> Designing with Pictographs, Burns et al.</a>-->
+														D3: Interactive Vis Implementation<br>
+														<guest-today></guest-today> Thomas Davidson<br>
+														Begin in class: <hw-assignment></hw-assignment> <a href="assignments/homeworks.html">4: Implement an Interactive Network</a> 
 													</td>
-													<td><s><hw-assignment></hw-assignment> <a href="assignments/homeworks.html">3: Implement an Interactive Network</a></s> -- <i>Now due Friday, Sep. 30</i></td>
+													<td><no-prep></no-prep></td>
+													<td>
+														<poetry-milestone></poetry-milestone> <a href="assignments/dd_poetry.html">2: Dataset Curation</a>
+													</td>
 												</tr>
 												<tr>
 		
-													<td>9-29</td>
-													<td>Visual Analytics</td>
-													<td>
-														<a href="https://www.youtube.com/watch?v=5uGRGqCFryg&feature=youtu.be"><watch-this></watch-this> Why Visual Analytics</a>
-													</td>
-													<td><group-milestone></group-milestone> <a href="assignments/group_project.html">2: Short Project Statement</a></td>
-												</tr>
-												<tr>
-													<td rowspan="2">7</td>
-													<td>10-04</td>
+													<td>9-27</td>
 													<td>Data & Visualization Ethics<br>
 														<i>Part I</i>
 													</td>
@@ -447,11 +511,13 @@
 														<a href="https://www.youtube.com/watch?v=IFA-3uXEcb0"><watch-this></watch-this> Lies, Distortions, and Misrepresentations in Data, Correll</a><br>
 														<opt-this></opt-this> <a href="https://www.youtube.com/watch?v=6GEfkfpU7wQ"><watch-this></watch-this> Data Feminism, Klein</a>
 													</td>
-													<td></td>
+													<td>
+														<span class="dlforsome">* <perform-milestone></perform-milestone> <a href="assignments/dd_performance.html">4: Status Update</a> <i>(dataset curators only)</i></span>
+													</td>
 												</tr>
-												<tr>
-											
-													<td>10-06</td>
+												<tr class="odd">
+													<td rowspan="2">7</td>
+													<td>10-02</td>
 													<td>Data & Visualization Ethics<br>
 														<i>Part II</i>
 													</td>
@@ -459,18 +525,160 @@
 														<a href="https://www.propublica.org/article/how-we-analyzed-the-compas-recidivism-algorithm"><read-this></read-this> ProPublica Article, Larson et al.</a><br>
 														<opt-this></opt-this> <a href="https://www.npr.org/transcripts/592986190"><listen-this></listen-this> Hidden Brain w/ Daniel Kahneman</a>
 													</td>
-													<td><hw-assignment></hw-assignment> <a href="assignments/homeworks.html">4: Design Ethical Visualizations</a></td>
+													<td>
+														<poetry-milestone></poetry-milestone> <a href="assignments/dd_poetry.html">3: Static Vis Design</a> <br>
+														<hw-assignment></hw-assignment> <a href="assignments/homeworks.html">4: Implement an Interactive Network</a> 
+													</td>
+												</tr>
+												<tr class="odd">
+											
+													<td>10-04</td>
+													<td>
+														<guest-today></guest-today> W.J. Lofton & Thomas Davidson<br>
+														Continue working in class on performance, poetry, or individual homeworks
+													</td>
+													<td><no-prep></no-prep></td>
+													<td>
+														<span class="dlforsome">* <perform-milestone></perform-milestone> <a href="assignments/dd_performance.html">5: Final Deliverable</a> <i>(dataset curators only)</i></span>
+													</td>
 												</tr>
 												<tr>
 													<td rowspan="2">8</td>
-													<td>10-11</td>
+													<td>10-09</td>
 													<td><break-today></break-today> Fall Break</td>
 													<td><no-prep></no-prep></td>
 													<td></td>
 												</tr>
 												<tr>
 											
-													<td>10-13</td>
+													<td>10-11</td>
+													<td>
+														Begin in Class: <hw-assignment></hw-assignment> <a href="assignments/homeworks.html">5: Design Ethical Visualizations</a> 
+													</td>
+													<td><no-prep></no-prep></td>
+													<td>
+														<span class="dlforsome">* <perform-milestone></perform-milestone> <a href="assignments/dd_performance.html">4: Status Update</a> <i>(static frame designers only)</i></span>
+													</td>
+												</tr>
+												<tr class="odd">
+													<td rowspan="2">9</td>
+													<td>10-16</td>
+													<td>Perception</td>
+													<td>
+														<a href="https://www.csc2.ncsu.edu/faculty/healey/PP/index.html"><read-this></read-this> Perception in Visualization, Healey</a>
+													</td>
+													<td>
+														<hw-assignment></hw-assignment> <a href="assignments/homeworks.html">5: Design Ethical Visualizations</a> 
+													</td>
+												</tr>
+												<tr class="odd">
+											
+													<td>10-18</td>
+													<td>Interaction</td>
+													<td>
+														<a href="https://www.vis4.net/blog/2017/03/in-defense-of-interactive-graphics/"><read-this></read-this> In Defense of Interactive Graphics, Aisch</a><br>
+														<opt-this></opt-this> <a href="https://medium.com/@dominikus/the-end-of-interactive-visualizations-52c585dcafcb"><read-this></read-this> The death of interactive infographics, Baur</a>
+													</td>
+													<td>
+														<poetry-milestone></poetry-milestone> <a href="assignments/dd_poetry.html">4: Static Vis Implementation</a> <br>
+														<span class="dlforsome">* <perform-milestone></perform-milestone> <a href="assignments/dd_performance.html">5: Final Deliverable</a> <i>(static frame designers only)</i></span>
+													</td>
+												</tr>
+												<tr>
+													<td rowspan="2">10</td>
+													<td>10-23</td>
+													<td>
+														Design Principles<br>
+														<guest-today></guest-today> W.J. Lofton
+														<!--<span class="label label-break"><i>Virtual</i> <span class="icon solid fa-globe"></span></span> <a href="http://ieeevis.org/year/2022/welcome">@ IEEE VIS</a>-->
+													</td>
+													<td>
+														<opt-this></opt-this> <a href="https://ieeexplore.ieee.org/abstract/document/6634103"><read-this></read-this> What Makes a Visualization Memorable, Borkin et al.</a>
+													</td>
+													<td></td>
+												</tr>
+												<tr>
+										
+													<td>10-25</td>
+													<td>
+														Uncertainty & Animation<br>
+														<guest-today></guest-today> W.J. Lofton
+														<!--<span class="label label-break"><i>Virtual</i> <span class="icon solid fa-globe"></span></span> <a href="http://ieeevis.org/year/2022/welcome">@ IEEE VIS</a>-->
+													</td>
+													<td>
+														<a href="https://www.youtube.com/watch?v=pTVAn4oLvbc"><watch-this></watch-this> The Visual Uncertainty Experience, Hullman</a><br>
+														<opt-this></opt-this> <a href="http://idl.cs.washington.edu/files/2016-WhenIsMyBus-CHI.pdf"><read-this></read-this> When(ish) Is My Bus, Kay et al.</a><br>
+														<opt-this></opt-this> <a href="http://users.eecs.northwestern.edu/~jhullman/HOPS_PLOS_preprint.pdf"><read-this></read-this> Hypothetical Outcome Plots, Hullman et al.</a>
+													</td>
+													<td>
+														<span class="dlforsome">* <perform-milestone></perform-milestone> <a href="assignments/dd_performance.html">4: Status Update</a> <i>(narrators and choreographers only)</i></span>
+													</td>
+												</tr>
+												<tr class="odd">
+													<td rowspan="2">11</td>
+													<td>10-30</td>
+													<td> 
+														<guest-today></guest-today> W.J. Lofton & Yanan Da<br>
+														Continue working in class on performance, poetry, or individual homeworks
+													</td>
+													<td><no-prep></no-prep></td>
+													<td>
+														<span class="dlforsome">* <perform-milestone></perform-milestone> <a href="assignments/dd_performance.html">4: Status Update</a> <i>(directors only)</i></span>
+													</td>
+												</tr>
+												<tr class="odd">
+											
+													<td>11-01</td>
+													<td>
+														Evaluation<br>
+														<i>Part I</i>
+													</td>
+													<td>
+														<i><a href="http://www.cs.umd.edu/users/ben/papers/Shneiderman2006Strategies.pdf"><read-this></read-this> Multi-Dimensional In-Depth Long-term Case Studies, Shneiderman and Plaisant</a>
+													</td>
+													<td>
+														<poetry-milestone></poetry-milestone> <a href="assignments/dd_poetry.html">5: Interactive Vis Implementation</a> <br>
+														<span class="dlforsome">* <perform-milestone></perform-milestone> <a href="assignments/dd_performance.html">5: Final Deliverable</a> <i>(narrators and choreographers only)</i></span>
+													</td>
+												</tr>
+												<tr>
+													<td rowspan="2">12</td>
+													<td>11-06</td>
+													<td>
+														Evaluation<br>
+														<i>Part II</i>
+													</td>
+													<td>
+														<a href="https://emilywall.github.io/media/papers/ValueVIS18.pdf"><read-this></read-this> A Heuristic Approach to Value-Driven Evaluation of Visualizations, Wall et al.</a>
+													</td>
+													<td></td>
+												</tr>
+												<tr>
+											
+													<td>11-08</td>
+													<td>Visual Analytics</td>
+													<td>
+														<a href="https://www.youtube.com/watch?v=5uGRGqCFryg&feature=youtu.be"><watch-this></watch-this> Why Visual Analytics</a>
+													</td>
+													<td>
+														<span class="dlforsome">* <perform-milestone></perform-milestone> <a href="assignments/dd_performance.html">4: Status Update</a> <i>(videographers only)</i></span>
+													</td>
+												</tr>
+												<tr class="odd">
+													<td rowspan="2">13</td>
+													<td>11-13</td>
+													<td>Tables & Text</td>
+													<td>
+														<a href="https://projects.iq.harvard.edu/files/pfister/files/2013_infovis_lineup.pdf"><read-this></read-this> Lineup: Visual analysis of multi-attribute rankings, Gratzl et al.</a><br>
+														<opt-this></opt-this> <a href="https://www.cc.gatech.edu/~stasko/papers/iv08-jigsaw.pdf"><read-this></read-this> Jigsaw, Stasko et al.</a>
+													</td>
+													<td>
+														<poetry-milestone></poetry-milestone> <a href="assignments/dd_poetry.html">6: Final Report</a>
+													</td>
+												</tr>
+												<tr class="odd">
+										
+													<td>11-15</td>
 													<td>
 														Exploratory Data Analysis
 													</td>
@@ -480,167 +688,73 @@
 													<td></td>
 												</tr>
 												<tr>
-													<td rowspan="2">9</td>
-													<td>10-18</td>
-													<td>
-														Design Principles<br>
-														<span class="label label-break"><i>Virtual</i> <span class="icon solid fa-globe"></span></span> <a href="http://ieeevis.org/year/2022/welcome">@ IEEE VIS</a>
-													</td>
-													<td>
-														<opt-this></opt-this> <a href="https://ieeexplore.ieee.org/abstract/document/6634103"><read-this></read-this> What Makes a Visualization Memorable, Borkin et al.</a>
-													</td>
-													<td><hw-assignment></hw-assignment> <a href="assignments/homeworks.html">5: Conduct Exploratory Data Analysis with Tableau</a></td>
-												</tr>
-												<tr>
-											
-													<td>10-20</td>
-													<td>
-														Uncertainty & Animation<br>
-														<span class="label label-break"><i>Virtual</i> <span class="icon solid fa-globe"></span></span> <a href="http://ieeevis.org/year/2022/welcome">@ IEEE VIS</a>
-													</td>
-													<td>
-														<a href="https://www.youtube.com/watch?v=pTVAn4oLvbc"><watch-this></watch-this> The Visual Uncertainty Experience, Hullman</a><br>
-														<opt-this></opt-this> <a href="http://idl.cs.washington.edu/files/2016-WhenIsMyBus-CHI.pdf"><read-this></read-this> When(ish) Is My Bus, Kay et al.</a><br>
-														<opt-this></opt-this> <a href="http://users.eecs.northwestern.edu/~jhullman/HOPS_PLOS_preprint.pdf"><read-this></read-this> Hypothetical Outcome Plots, Hullman et al.</a>
-													</td>
-													<td></td>
-												</tr>
-												<tr>
-													<td rowspan="2">10</td>
-													<td>10-25</td>
-													<td>
-														Evaluation<br>
-														<i>Part I</i>
-													</td>
-													<td>
-														<i><a href="http://www.cs.umd.edu/users/ben/papers/Shneiderman2006Strategies.pdf"><read-this></read-this> Multi-Dimensional In-Depth Long-term Case Studies, Shneiderman and Plaisant</a>
-													</td>
-													<!--<td><i><span class="label label-break">No Lecture</span></i> (VIS Week)</td>
-													<td><no-prep></no-prep></td>-->
-													<td><hw-assignment></hw-assignment> <a href="assignments/homeworks.html">6: IEEE VIS Travel Report</a></td>
-												</tr>
-												<tr>
-										
-													<td>10-27</td>
-													<td>
-														Evaluation<br>
-														<i>Part II</i>
-													</td>
-													<td>
-														<a href="https://emilywall.github.io/media/papers/ValueVIS18.pdf"><read-this></read-this> A Heuristic Approach to Value-Driven Evaluation of Visualizations, Wall et al.</a>
-													</td>
-													<!--<td><i><span class="label label-break">No Lecture</span></i> (VIS Week)</td>
-													<td><no-prep></no-prep></td>-->
-													<td></td>
-												</tr>
-												<tr>
-													<td rowspan="2">11</td>
-													<td>11-01</td>
-													<td><span class="label label-group">Group</span> Project Poster Session</td>
-													<td><no-prep></no-prep></td>
-													<td><group-milestone></group-milestone> <a href="assignments/group_project.html">3: Project Design Document</a></td>
-												</tr>
-												<tr>
-											
-													<td>11-03</td>
-													<td>Networks & Trees</td>
-													<td>
-														<a href="http://treevis.net"><read-this></read-this> A Visual Bibliography of Tree Visualization, Schulz</a><br> 
-														<a href="https://vimeo.com/237670662"><watch-this></watch-this> Graphiti, Srinivasan et al.</a>
-													</td>
-													<td></td>
-												</tr>
-												<tr>
-													<td rowspan="2">12</td>
-													<td>11-08</td>
-													<td><a href="https://classroom.github.com/a/2RPSbggB">Design Lab<br>
-														<i>Maps & Networks</i></a>
-													</td>
-													<td><no-prep></no-prep></td>
-													<td></td>
-												</tr>
-												<tr>
-											
-													<td>11-10</td>
-													<td>Tables & Text</td>
-													<td>
-														<a href="https://projects.iq.harvard.edu/files/pfister/files/2013_infovis_lineup.pdf"><read-this></read-this> Lineup: Visual analysis of multi-attribute rankings, Gratzl et al.</a><br>
-														<opt-this></opt-this> <a href="https://www.cc.gatech.edu/~stasko/papers/iv08-jigsaw.pdf"><read-this></read-this> Jigsaw, Stasko et al.</a>
-													</td>
-													<td></td>
-												</tr>
-												<tr>
-													<td rowspan="2">13</td>
-													<td>11-15</td>
-													<td>
-														Geospatial Visualization<br>
-														<guest-today></guest-today> <i>Guest Lecture: <a href="https://planning.gatech.edu/people/clio-andris">Dr. Clio Andris</a>, Georgia Tech</i>
-														<!--<i>Guest Lecture: <a href="https://www.american.edu/cas/faculty/godwin.cfm">Dr. Alex Godwin</a>, American U.</i>-->
-													</td>
-													<td><a href="https://www.tableau.com/learn/articles/data-visualization/glossary/geospatial"><read-this></read-this> Skim Tableau GeoVis Primer</a></td>
-													<td><hw-assignment></hw-assignment> <a href="assignments/homeworks.html">7: Critique a Visualization</a></td>
-												</tr>
-												<tr>
-										
-													<td>11-17</td>
-													<td>VIS Research Flash Talks<br>
-														<guest-today></guest-today> <i>Guest Speakers: Yanan Da,
-														Shrey Gupta, & Mengyu Chen</i>
-													</td>
-													<td><no-prep></no-prep></td>
-													<td></td>
-												</tr>
-												<tr>
 													<td rowspan="2">14</td>
-													<td>11-22</td>
-													<td><s>Tasks & Visualization Models</s><br><b>Enjoy the holiday</b></td>
+													<td>11-20</td>
 													<td>
-														<a href="https://www.bckwon.com/pdf/kgva.pdf"><read-this></read-this> Knowledge Generation Model for Visual Analytics, Sacha et al.</a>
-														<!--<a href="https://www.cs.ubc.ca/labs/imager/tr/2013/MultiLevelTaskTypology/brehmer_infovis13.pdf"><read-this></read-this> A Multi-Level Typology of Abstract Visualization Tasks</a><br>
-														<a href="https://www.cc.gatech.edu/~john.stasko/papers/infovis05.pdf"><read-this></read-this> Low-Level Components of Analytic Activity in Information Visualization</a>-->
+														VIS Research Flash Talks<br>
+														<guest-today></guest-today> <i>Guest Speakers: TBD</i><br>
+														<i>(possible recording day for group project)</i>
+														<!--<span class="label label-break">CANCELED</span> <i>Enjoy the holiday</i>-->
 													</td>
-													<td><group-milestone></group-milestone> <a href="assignments/group_project.html">4: Status Update</a></td>
+													<td><no-prep></no-prep></td>
+													<td></td>
 												</tr>
 												<tr>
 											
-													<td>11-24</td>
+													<td>11-22</td>
 													<td><break-today></break-today> Thanksgiving</td>
 													<td><no-prep></no-prep></td>
 													<td></td>
 												</tr>
-												<tr>
+												<tr class="odd">
 													<td rowspan="2">15</td>
-													<td>11-29</td>
-													<td>
-														<span class="label label-group">Group</span> Debate, Topic 3<br>
-														+ Time Series 
-														<!--<span class="label label-break">CANCELED</span> <i>Enjoy the holiday</i><br>
-														<strike>Time Series</strike>-->
+													<td>11-27</td>
+													<td> 
+														<guest-today></guest-today> W.J. Lofton <br>
+														Continue working in class on performance or individual homeworks
 													</td>
-													<td>
-														<a href="https://www.youtube.com/watch?v=2lBkEGHYweY"><watch-this></watch-this> Streamgraphs, Schwabish and Pazos</a><br>
-														<a href="https://www.youtube.com/watch?v=FHgcJDnW8q8&t=5s"><watch-this></watch-this> EventFlow, Monroe et al.</a>
-													</td>
-													<td></td>
-												</tr>
-												<tr>
-												
-													<td>12-01</td>
-													<td><span class="label label-group">Group</span> Project Presentations</td>
 													<td><no-prep></no-prep></td>
-													<td></td>
+													<td>
+														<span class="dlforsome">* <perform-milestone></perform-milestone> <a href="assignments/dd_performance.html">4: Status Update</a> <i>(video editors only)</i></span> <br>
+														<span class="dlforsome">* <perform-milestone></perform-milestone> <a href="assignments/dd_performance.html">5: Final Deliverable</a> <i>(videographers and directors only)</i></span>
+													</td>
+												</tr>
+												<tr class="odd">
+												
+													<td>11-29</td>
+													<td><a href="../assignments/debate.html">Debate</a> (in class)</td>
+													<td><no-prep></no-prep></td>
+													<td>
+														<hw-assignment></hw-assignment> <a href="assignments/homeworks.html">6: Critique a Vis</a> 
+													</td>
 												</tr>
 												<tr>
 													<td rowspan="2">16</td>
-													<td>12-06</td>
-													<td><span class="label label-group">Group</span> Project Presentations</td>
+													<td>12-04</td>
+													<td>
+														Wrap Up<br>
+														View final performance (<perform-milestone></perform-milestone>)<br>
+														+ favorite poems (<poetry-milestone></poetry-milestone>)<br>
+														<guest-today></guest-today> W.J. Lofton & Thomas Davidson
+													</td>
 													<td><no-prep></no-prep></td>
-													<td><group-milestone></group-milestone> <a href="assignments/group_project.html">Final Deliverables</a></td>
+													<td>
+														<span class="dlforsome">* <perform-milestone></perform-milestone> <a href="assignments/dd_performance.html">5: Final Deliverable</a> <i>(video editors only)</i></span>
+													</td>
 												</tr>
 												<tr>
 												
-													<td>12-13</td>
-													<td><s>(Final Exam period: 11:30a - 2:00p)</s><br><b>No exam</b></td>
+													<td>12-06</td>
+													<td><break-today></break-today> No Class (End of Term)</td>
+													<td><no-prep></no-prep></td>
+													<td></td>
+												</tr>
+												<tr class="odd">
+													<td>17</td>
+													<td>12-11</td>
+													<td>
+														<s>(Final Exam period: 11:00a - 2:00p)</s><br><b>No exam</b>
+													</td>
 													<td><no-prep></no-prep></td>
 													<td></td>
 												</tr>

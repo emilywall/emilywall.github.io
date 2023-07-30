@@ -41,7 +41,7 @@ class Opt extends HTMLElement {
 		super();
 	}
 	connectedCallback() {
-		this.innerHTML = `<span class="label label-opt">O</span>`;
+		this.innerHTML = `<span class="label label-none">O</span>`;
 	}
 }
 
@@ -171,6 +171,24 @@ class GroupMilestone extends HTMLElement {
 	}
 }
 
+class PerformanceMilestone extends HTMLElement {
+	constructor() {
+		super();
+	}
+	connectedCallback() {
+		this.innerHTML = `<span class="label label-sprint">M <span class="icon solid fa-theater-masks"></span></span>`;
+	}
+}
+
+class PoetryMilestone extends HTMLElement {
+	constructor() {
+		super();
+	}
+	connectedCallback() {
+		this.innerHTML = `<span class="label label-opt">M <span class="icon solid fa-feather"></span></span>`;
+	}
+}
+
 class Homework extends HTMLElement {
 	constructor() {
 		super();
@@ -205,4 +223,6 @@ customElements.define('flex-day', FlexDay);
 customElements.define('guest-today', Guest);
 customElements.define('grad-presentation', Grad);
 customElements.define('group-milestone', GroupMilestone);
+customElements.define('perform-milestone', PerformanceMilestone);
+customElements.define('poetry-milestone', PoetryMilestone);
 customElements.define('hw-assignment', Homework);

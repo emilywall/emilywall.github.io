@@ -37,7 +37,16 @@ body {
 }
 
 ol, ul {
-  list-style: none; }
+  list-style: none; 
+}
+
+.odd {
+  background-color: #f5f5f5;
+}
+
+.dlforsome {
+  opacity: 0.5;
+}
 
 .todo {
   color: red;
