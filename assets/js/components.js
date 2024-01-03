@@ -117,6 +117,15 @@ class DSEnd extends HTMLElement {
 	}
 }
 
+class Debate extends HTMLElement {
+	constructor() {
+		super();
+	}
+	connectedCallback() {
+		this.innerHTML = `<span class="label label-sprint">Debate <span class="icon solid fa-comments"></span></span>`;
+	}
+}
+
 class IA extends HTMLElement {
 	constructor() {
 		super();
@@ -226,6 +235,7 @@ customElements.define('no-prep', NoPrep);
 customElements.define('d-s', DS);
 customElements.define('ds-start', DSStart);
 customElements.define('ds-end', DSEnd);
+customElements.define('debate-today', Debate);
 customElements.define('i-a', IA);
 customElements.define('break-today', Break);
 customElements.define('no-lecture', NoLecture);
