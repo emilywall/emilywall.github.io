@@ -72,12 +72,30 @@ class Quiz extends HTMLElement {
 	}
 }
 
+class Exam extends HTMLElement {
+	constructor() {
+		super();
+	}
+	connectedCallback() {
+		this.innerHTML = `<span class="label label-opt"><i>Exam</i> <span class="icon solid fa-edit"></span></span>`;
+	}
+}
+
 class OralExam extends HTMLElement {
 	constructor() {
 		super();
 	}
 	connectedCallback() {
 		this.innerHTML = `<span class="label label-opt"><i>Oral Exam</i> <span class="icon solid fa-comments"></span></span>`;
+	}
+}
+
+class WrittenExam extends HTMLElement {
+	constructor() {
+		super();
+	}
+	connectedCallback() {
+		this.innerHTML = `<span class="label label-opt"><i>Written Exam</i> <span class="icon solid fa-edit"></span></span>`;
 	}
 }
 
@@ -230,7 +248,9 @@ customElements.define('opt-this', Opt);
 customElements.define('hack-day', Hack);
 customElements.define('demo-day', Demo);
 customElements.define('quiz-today', Quiz);
+customElements.define('exam-today', Exam);
 customElements.define('oral-exam', OralExam);
+customElements.define('written-exam', WrittenExam);
 customElements.define('no-prep', NoPrep);
 customElements.define('d-s', DS);
 customElements.define('ds-start', DSStart);
