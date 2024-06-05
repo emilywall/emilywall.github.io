@@ -72,12 +72,48 @@ class Quiz extends HTMLElement {
 	}
 }
 
+class QuizConcept extends HTMLElement {
+	constructor() {
+		super();
+	}
+	connectedCallback() {
+		this.innerHTML = `<span class="label label-opt"><i>Quiz</i> <span class="icon solid fa-globe"></span></span>`;
+	}
+}
+
+class QuizProgramming extends HTMLElement {
+	constructor() {
+		super();
+	}
+	connectedCallback() {
+		this.innerHTML = `<span class="label label-opt"><i>Quiz</i> <span class="icon solid fa-code"></span></span>`;
+	}
+}
+
 class Exam extends HTMLElement {
 	constructor() {
 		super();
 	}
 	connectedCallback() {
-		this.innerHTML = `<span class="label label-opt"><i>Exam</i> <span class="icon solid fa-edit"></span></span>`;
+		this.innerHTML = `<span class="label label-sprint"><i>Exam</i> <span class="icon solid fa-edit"></span></span>`;
+	}
+}
+
+class Exam1 extends HTMLElement {
+	constructor() {
+		super();
+	}
+	connectedCallback() {
+		this.innerHTML = `<span class="label label-sprint"><i>Exam 1</i> <span class="icon solid fa-edit"></span></span>`;
+	}
+}
+
+class Exam2 extends HTMLElement {
+	constructor() {
+		super();
+	}
+	connectedCallback() {
+		this.innerHTML = `<span class="label label-sprint"><i>Exam 2</i> <span class="icon solid fa-edit"></span></span>`;
 	}
 }
 
@@ -86,7 +122,7 @@ class OralExam extends HTMLElement {
 		super();
 	}
 	connectedCallback() {
-		this.innerHTML = `<span class="label label-opt"><i>Oral Exam</i> <span class="icon solid fa-comments"></span></span>`;
+		this.innerHTML = `<span class="label label-sprint"><i>Oral Exam</i> <span class="icon solid fa-comments"></span></span>`;
 	}
 }
 
@@ -95,7 +131,7 @@ class WrittenExam extends HTMLElement {
 		super();
 	}
 	connectedCallback() {
-		this.innerHTML = `<span class="label label-opt"><i>Written Exam</i> <span class="icon solid fa-edit"></span></span>`;
+		this.innerHTML = `<span class="label label-sprint"><i>Written Exam</i> <span class="icon solid fa-edit"></span></span>`;
 	}
 }
 
@@ -234,6 +270,15 @@ class Homework extends HTMLElement {
 	}
 }
 
+class ProgrammingAssignment extends HTMLElement {
+	constructor() {
+		super();
+	}
+	connectedCallback() {
+		this.innerHTML = `<span class="label label-flex">PA <span class="icon solid fa-code"></span></span>`;
+	}
+}
+
 
 
 
@@ -248,7 +293,11 @@ customElements.define('opt-this', Opt);
 customElements.define('hack-day', Hack);
 customElements.define('demo-day', Demo);
 customElements.define('quiz-today', Quiz);
+customElements.define('quiz-concept', QuizConcept);
+customElements.define('quiz-programming', QuizProgramming);
 customElements.define('exam-today', Exam);
+customElements.define('exam1-today', Exam1);
+customElements.define('exam2-today', Exam2);
 customElements.define('oral-exam', OralExam);
 customElements.define('written-exam', WrittenExam);
 customElements.define('no-prep', NoPrep);
@@ -266,3 +315,4 @@ customElements.define('group-milestone', GroupMilestone);
 customElements.define('perform-milestone', PerformanceMilestone);
 customElements.define('poetry-milestone', PoetryMilestone);
 customElements.define('hw-assignment', Homework);
+customElements.define('programming-assignment', ProgrammingAssignment)
