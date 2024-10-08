@@ -170,7 +170,8 @@ loadScripts(document, 'script');</script>
 <div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a></code></div>
 <div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#bankToString()" class="member-name-link">bankToString</a>()</code></div>
 <div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
-<div class="block">Returns a message showing the player's bank of cards.</div>
+<div class="block">Returns a message showing the player's bank of cards.
+</div>
 </div>
 <div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/ArrayList.html" title="class or interface in java.util" class="external-link">ArrayList</a>&lt;<a href="Card.html" title="class in cs171a2">Card</a>&gt;</code></div>
 <div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#getHand()" class="member-name-link">getHand</a>()</code></div>
@@ -335,7 +336,14 @@ loadScripts(document, 'script');</script>
 <section class="detail" id="handToString()">
 <h3>handToString</h3>
 <div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="return-type"><a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a></span>&nbsp;<span class="element-name">handToString</span>()</div>
-<div class="block">Returns a message showing the player's hand of cards.</div>
+<div class="block">Returns a message showing the player's hand of cards in the format: 
+<p>Player bank has N cards: 101 202 303 ....</p>
+Where:
+<ul>
+    <li>Player is the name of the player</li>
+    <li>N is the number of cards in their bank</li>
+    <li>The message concludes with a list of card identifiers in their hand</li>
+<ul></div>
 <dl class="notes">
 <dt>Returns:</dt>
 <dd>a string representation of the player's hand</dd>
@@ -346,7 +354,15 @@ loadScripts(document, 'script');</script>
 <section class="detail" id="bankToString()">
 <h3>bankToString</h3>
 <div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="return-type"><a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a></span>&nbsp;<span class="element-name">bankToString</span>()</div>
-<div class="block">Returns a message showing the player's bank of cards.</div>
+<div class="block">Returns a message showing the player's bank of cards in the format:
+<p>Player bank has N cards: 101 202 303 ....</p>
+Where:
+<ul>
+    <li>Player is the name of the player</li>
+    <li>N is the number of cards in their bank</li>
+    <li>The message concludes with a list of card identifiers in their bank</li>
+<ul>
+</div>
 <dl class="notes">
 <dt>Returns:</dt>
 <dd>a string representation of the player's bank</dd>
